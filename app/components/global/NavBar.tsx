@@ -1,6 +1,6 @@
 "use client"
 
-import { Transition, Popover } from "@headlessui/react"
+import { Transition, Disclosure } from "@headlessui/react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Fragment } from 'react'
@@ -10,7 +10,7 @@ export default function NavBar() {
   let pathname = usePathname() || "/"
 
   return (
-    <Popover as ="nav" className="relative">
+    <Disclosure as ="nav" className="relative">
       {({open}) => (
         <>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -58,7 +58,7 @@ export default function NavBar() {
 
               <div className="-mr-2 flex items-center sm:hidden">
                 <ThemeButton classWrapper="mr-3"/>
-                <Popover.Button className="z-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus: ring-purple-700 dark:hover:bg-gray-800">
+                <Disclosure.Button className="z-50 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus: ring-purple-700 dark:hover:bg-gray-800">
                   {open ? (
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -68,7 +68,7 @@ export default function NavBar() {
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                     </svg>
                   )}
-                </Popover.Button>
+                </Disclosure.Button>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function NavBar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-            <Popover.Panel className="fixed z-10 top-0 right-0 left-0 bottom-0 sm:hidden">
+            <Disclosure.Panel className="fixed z-10 top-0 right-0 left-0 bottom-0 sm:hidden">
               <div className="bg-white dark:bg-[#090908] pt-32 pb-3 h-full w-full">
                 <Link 
                   href="/" 
@@ -112,10 +112,10 @@ export default function NavBar() {
                   Projects
                 </Link>
               </div>
-            </Popover.Panel>
+            </Disclosure.Panel>
           </Transition>
         </>
       )}
-    </Popover>
+    </Disclosure>
   )
 }
