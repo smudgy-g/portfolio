@@ -82,8 +82,8 @@ export default function NavBar() {
               leaveFrom="opacity-100 translate-y-0"
               leaveTo="opacity-0 translate-y-1"
             >
-            <Popover.Panel className="absolute z-10 top-0 bottom-0 left-0 right-0 sm:hidden">
-              <div className="bg-white dark:bg-[#090908] pt-20 pb-3 space-y-1">
+            <Popover.Panel className="fixed z-10 top-0 right-0 left-0 bottom-0 sm:hidden">
+              <div className="bg-white dark:bg-[#090908] pt-32 pb-3 h-full w-full">
                 <Link 
                   href="/" 
                   prefetch 
