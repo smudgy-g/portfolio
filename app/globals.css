@@ -6,7 +6,7 @@
   background: #0D19A3;
 }
 
-@media (min-width: 640px) { 
+@media (min-width: 768px) { 
   .hero-bg {
     background: linear-gradient(90deg, #0D19A3 73%, #E4C580 27%);
   }

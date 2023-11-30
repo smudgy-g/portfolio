@@ -43,7 +43,7 @@ export default function NavBar({ routes }: { routes: Route[] }) {
         )}
       </button>
 
-      <nav className={`${open ? "visible" : "hidden"} fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-white text-lg flex flex-col justify-around z-[49] p-14 lg:top-6 lg:left-auto lg:right-14 lg:w-fit lg:h-fit lg:text-sm transition-all duration-500 ease-in-out`}>
+      <nav className={`${open ? "visible" : "hidden"} fixed top-0 left-0 bottom-0 right-0 w-full h-full border border-light-gold bg-white text-lg flex flex-col justify-around z-[49] p-14 lg:top-6 lg:left-auto lg:right-14 lg:w-fit lg:h-fit lg:text-sm transition-all duration-500 ease-in-out`}>
         <ul className="my-5">
           {routes.map((route, index) => (
             <li 
