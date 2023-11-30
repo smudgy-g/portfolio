@@ -25,7 +25,9 @@ export default async function Home() {
                     .sort()
                     .map(([key, value], id) => (
                       <li key={id}>
-                        <LinkButton content={key[0].toUpperCase() + key.toLowerCase().slice(1)} href={value} />
+                        <LinkButton href={value} >
+                        {key[0].toUpperCase() + key.toLowerCase().slice(1)} 
+                        </LinkButton>
                       </li>
                     ))}
                 </ul>

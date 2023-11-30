@@ -3,77 +3,65 @@ import { getProfile } from "@/lib/sanity.query"
 import type { ProfileType } from "@/types"
 import { PortableText } from "@portabletext/react"
 import { BiEnvelope, BiFile } from "react-icons/bi"
+import LinkButton from "../components/shared/LinkButton"
 
 export default async function About() {
   const profile: ProfileType = await getProfile()
 
   return (
-    <main className="lg:max-w-7xl mx-auto max-w-3xl md:px-16 px-6">
+    <main className="">
       {profile &&
-        <div key={profile._id}>
-          <section className="grid lg:grid-cols-2 grid-cols-1 gap-x-6 justify-items-center">
-            <div className="order-2 lg:order-none">
-              <h1 className="lg:text-5xl text-4xl lg:leading-tight basis-1/2 font-bold mb-8">
-                I&apos;m {profile.fullName}. I live in {profile.location}, where I
-                design the future.
+        <div key={profile._id} className="flex flex-col md:flex-nowrap items-center justify-center md:flex-row">
+          <article className="bg-blue flex flex-col items-center justify-items-center text-left pt-40 pb-10 w-full">
+            <div className="space-y-5 ">
+              <figure className="relative border border-cream w-[250px] min-h-[250px]">
+                <Image
+                  src={profile.profileImage.image}
+                  height={200}
+                  width={200}
+                  alt={profile.profileImage.alt}
+                  className="-mt-3 ml-2 md:-mt-10 md:-ml-7"
+                />
+              </figure>
+              <figcaption>
+                <LinkButton href={`${profile.resumeURL}?dl=${profile.fullName}_resume`} classesWrapper="text-right md:text-left">
+                    <BiFile className="text-base inline-flex items-center" /> Download Resumé
+                </LinkButton>
+              </figcaption>
+            </div>
+          </article>
+
+
+          <article className="mt-12 px-4">
+            <div className="relative">
+              <h1 className="lg:text-5xl text-4xl relative text-dark-blue lg:leading-tight font-bold mb-8 after:content-[''] after:bg-light-green after:h-2 after:absolute after:w-[60%] after:block after:-mt-2 after:left-[4%]  after:z-[-1]">
+                I&apos;m {profile.fullName}.
               </h1>
 
-              <div className="flex flex-col gap-y-3 text-zinc-400 leading-relaxed">
+              <div className="flex flex-col gap-y-3 leading-relaxed text-left">
                 <PortableText value={profile.fullBio} />
               </div>
             </div>
+          </article>
 
-            <div className="flex flex-col lg:justify-self-center justify-self-start gap-y-8 lg:order-1 order-none mb-12">
-              <div>
-                <Image
-                  className="rounded-2xl mb-4 object-cover max-h-96 min-h-96 bg-top bg-[#1d1d20]"
-                  src={profile.profileImage.image}
-                  width={400}
-                  height={400}
-                  quality={100}
-                  alt={profile.profileImage.alt}
-                />
-
-                <a
-                  href={`${profile.resumeURL}?dl=${profile.fullName}_resume`}
-                  className="flex items-center justify-center gap-x-2 bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md duration-200 py-2 text-center cursor-cell font-medium"
-                >
-                  <BiFile className="text-base" /> Download Resumé
-                </a>
-              </div>
-
-              <ul>
-                <li>
-                  <a
-                    href={`mailto:${profile.email}`}
-                    className="flex items-center gap-x-2 hover:text-purple-400 duration-300"
-                  >
-                    <BiEnvelope className="text-lg" />
-                    {profile.email}
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section className="mt-24 max-w-2xl">
-            <h2 className="font-semibold text-4xl mb-4">Expertise</h2>
-            <p className="text-zinc-400 max-w-lg">
+          <article className="mt-24 px-4 mb-12">
+            <h2 className="font-semibold text-dark-blue text-4xl mb-4 after:content-[''] after:bg-light-green after:h-2 after:absolute after:w-[60%] after:block after:-mt-2 after:left-[4%]  after:z-[-1]">Expertise</h2>
+            <p className="text-left max-w-lg">
               I&apos;ve spent few years working on my skills. In no particular
               order, here are a few of them.
             </p>
 
-            <ul className="flex flex-wrap items-center gap-3 mt-8">
+            <ul className="flex flex-wrap gap-3 mt-8">
               {profile.skills && profile.skills.map((skill, id) => (
                 <li
                   key={id}
-                  className="bg-[#1d1d20] border border-transparent hover:border-zinc-700 rounded-md px-2 py-1"
+                  className="border border-light-green hover:border-blue rounded-md px-2 py-1"
                 >
                   {skill}
                 </li>
               ))}
             </ul>
-          </section>
+          </article>
         </div>
       }
     </main>
