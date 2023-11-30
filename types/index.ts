@@ -41,3 +41,8 @@ export type ProjectType = {
   };
   description: PortableTextBlock[],
 }
+
+export type Route = {
+  title: string,
+  href: string
+}

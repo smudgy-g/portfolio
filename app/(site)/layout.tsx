@@ -22,17 +22,24 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const routes = [
+    {href: '/', title: 'Home'},
+    {href: '/about', title: 'About Me'},
+    {href: '/projects', title: 'My Projects'},
+  ]
+
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${titillium.className} text-center h-full selection:bg-gray-100 relative`}>
         <Suspense>
-          <NavBar />
+          <NavBar routes={routes} />
         </Suspense>
         <main className="mx-auto">
           {children}
         </main>
         <Suspense>
-          <Footer />
+          <Footer  routes={routes} />
         </Suspense>
       </body>
     </html>

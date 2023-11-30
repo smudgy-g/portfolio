@@ -8,16 +8,13 @@ import { Fragment, useState } from 'react'
 import Logo from '../icons/logo.png'
 import RainbowLogo from '../icons/rainbow_logo.png'
 import NavLink from "../shared/NavLink"
+import { Route } from "@/types"
 
-export default function NavBar() {
+export default function NavBar({ routes }: { routes: Route[] }) {
   let pathname = usePathname() || "/"
   const [open, setOpen] = useState(false)
 
-  const routes = [
-    {href: '/', title: 'Home'},
-    {href: '/about', title: 'About Me'},
-    {href: '/projects', title: 'My Projects'},
-  ]
+  
 
   function handleClick() {
     setOpen(!open)
@@ -33,7 +30,7 @@ export default function NavBar() {
       
       <button 
         onClick={handleClick}
-        className={`${open ? "text-blue" : "text-white"} z-[999] text-lg inline-flex border border-transparent p-2 mr-4 hover:border-dark-blue focus:outline-none focus:ring-2 focus:ring-inset focus: ring-dark-blue`}
+        className="text-blue z-[999] inline-flex border border-transparent p-2 mr-4 hover:border-blue focus:outline-none focus:ring-2 focus:ring-inset focus: ring-blue"
       >
         {open ? (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -46,7 +43,7 @@ export default function NavBar() {
         )}
       </button>
 
-      <nav className={`${open ? "visible" : "hidden"} fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-white text-lg flex flex-col justify-around z-[49] p-14 lg:top-6 lg:left-auto lg:right-14 lg:w-fit lg:h-fit lg:text-sm`}>
+      <nav className={`${open ? "visible" : "hidden"} fixed top-0 left-0 bottom-0 right-0 w-full h-full bg-white text-lg flex flex-col justify-around z-[49] p-14 lg:top-6 lg:left-auto lg:right-14 lg:w-fit lg:h-fit lg:text-sm transition-all duration-500 ease-in-out`}>
         <ul className="my-5">
           {routes.map((route, index) => (
             <li 
