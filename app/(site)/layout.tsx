@@ -24,7 +24,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${titillium.className} bg-blue text-white h-full selection:bg-gray-100 relative`}>
+      <body className={`${titillium.className} text-center h-full selection:bg-gray-100 relative`}>
         <Suspense>
           <NavBar />
         </Suspense>

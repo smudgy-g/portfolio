@@ -14,7 +14,7 @@ export default function NavBar() {
   const [open, setOpen] = useState(false)
 
   const routes = [
-    {href: '/home', title: 'Home'},
+    {href: '/', title: 'Home'},
     {href: '/about', title: 'About Me'},
     {href: '/projects', title: 'My Projects'},
   ]
@@ -24,7 +24,7 @@ export default function NavBar() {
   }
 
   return (
-    <header className="flex justify-between items-center px-12 absolute w-full z-50 h-[100px] bg-none">
+    <header className="flex justify-between items-center text-left px-12 absolute w-full z-50 h-[100px] bg-none">
          
       <Link href="/" className="z-[999]">
         <Image src={open ? RainbowLogo : Logo} height={50} width={50} alt="logo for Adam Grifftihs" />
@@ -33,7 +33,7 @@ export default function NavBar() {
       
       <button 
         onClick={handleClick}
-        className={`${open ? "text-blue" : "text-white"} z-[999] inline-flex border border-transparent p-2 mr-4 hover:border-light-gold focus:outline-none focus:ring-2 focus:ring-inset focus: ring-light-gold`}
+        className={`${open ? "text-blue" : "text-white"} z-[999] text-lg inline-flex border border-transparent p-2 mr-4 hover:border-dark-blue focus:outline-none focus:ring-2 focus:ring-inset focus: ring-dark-blue`}
       >
         {open ? (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
@@ -55,6 +55,7 @@ export default function NavBar() {
               <Link
                 href={route.href}
                 prefetch
+                onClick={handleClick}
                 className="text-dark-blue leading-10 relative transition-all duration-300 ease-in-out bg-transparent after:content-[''] after:block  after:opacity-0 after:h-full after:top-0 after:right-0  after:absolute after:bg-blue/40 after:w-0 after:origin-left hover:after:transition-all hover:after:opacity-100 hover:after:w-[20%] hover:after:min-w-4" 
               >
                 {route.title}

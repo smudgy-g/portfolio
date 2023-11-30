@@ -9,35 +9,43 @@ export default async function Home() {
 
   return (
     <>
-      <section className="relative flex lg:flex-row flex-col-reverse items-center lg:justify-center justify-between 
-      bg-gradient-to-r from-bg-blue from-10% to-light-gold-500 to-33% ">
-        {profile &&
-          <div key={profile._id} className="xl:pt-32 pt-20 pb-16 lg:px-16 px-6 md:max-w-1xl max-w-2xl">
-            <h1 className="text-7xl text-light-green font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight lg:min-w-[700px] min-w-full">
-              {profile.headline}
-            </h1>
-            <p className="text-base leading-relaxed">
-              {profile.shortBio}
-            </p>
-            
-            <ul className="flex items-center gap-x-6 my-10">
-              {Object.entries(profile.socialLinks)
-                .sort()
-                .map(([key, value], id) => (
-                  <li key={id}>
-                    <LinkButton content={key[0].toUpperCase() + key.toLowerCase().slice(1)} href={value} />
-                  </li>
-                ))}
-            </ul>
-          </div>
-        }
-
-        {profile.profileImage &&
-          <div className="bg-light-gold">
-            <Image src={profile.profileImage.image} height={500} width={300} alt={profile.profileImage.alt}/>
-          </div>}
+      <section className="bg-blue-gold-gradient pb-16 pt-60 flex flex-col items-center justify-center">
+          <article className="text-left flex flex-nowrap gap-10 w-full items-center justify-between px-28 max-w-[1100px]">
+            {profile &&
+              <div key={profile._id} className="">
+                <h1 className="text-3xl md:text-5xl lg:text-6xl text-light-green font-bold tracking-tight">
+                  {profile.headline}
+                </h1>
+                <p className="text-base text-cream leading-relaxed my-3 mr-12">
+                  {profile.shortBio}
+                </p>
+                
+                <ul className="flex items-center gap-x-6 my-10">
+                  {Object.entries(profile.socialLinks)
+                    .sort()
+                    .map(([key, value], id) => (
+                      <li key={id}>
+                        <LinkButton content={key[0].toUpperCase() + key.toLowerCase().slice(1)} href={value} />
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            }
+          <figure className="relative border border-cream min-w-[200px] min-h-[250px]">
+            {profile.profileImage &&
+              <Image 
+                src={profile.profileImage.image} 
+                height={200} 
+                width={200} 
+                alt={profile.profileImage.alt} 
+                className="-mt-10 -ml-7 block"
+              />
+            }
+          </figure>
+          </article>
 
       </section>
+      
       <section className=''>
         <JobsCard />
       </section>
