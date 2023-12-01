@@ -1,4 +1,3 @@
-import { PortableTextBlock } from "sanity"
 
 export type ProfileType = {
   _id: string,
@@ -10,7 +9,7 @@ export type ProfileType = {
   },
   shortBio: string,
   email: string,
-  fullBio: PortableTextBlock[],
+  fullBio: string,
   location: string,
   resumeURL: string,
   socialLinks: string[],
@@ -39,7 +38,7 @@ export type ProjectType = {
     alt: string | null,
     image: string,
   };
-  description: PortableTextBlock[],
+  description: string
 }
 
 export type Route = {
