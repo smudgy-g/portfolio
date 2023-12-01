@@ -35,7 +35,7 @@ export default async function About() {
           <section className="flex flex-col gap-8 md:gap-20 mt-12 mb-12 px-8 md:px-28 lg:px-40 max-w-[1100px]">
             <article className="">
               <div className="relative">
-                <h1 className="lg:text-5xl text-4xl relative text-dark-blue lg:leading-tight font-bold mb-8 after:content-[''] after:bg-light-green after:h-2 after:absolute after:w-[60%] after:block after:-mt-2 after:left-[4%]  after:z-[-1]">
+                <h1 className="lg:text-5xl text-4xl relative text-dark-blue lg:leading-tight font-bold mb-8 after:content-[''] after:bg-red-medium after:h-2 after:absolute after:w-[60%] after:block after:-mt-2 after:left-[4%]  after:z-[-1]">
                   I&apos;m {profile.fullName}.
                 </h1>
                 <div className="flex flex-col gap-y-3 leading-relaxed text-left">
@@ -44,7 +44,7 @@ export default async function About() {
               </div>
             </article>
             <article className="">
-              <h2 className="font-semibold text-dark-blue text-4xl mb-4 relative after:content-[''] after:bg-light-green after:h-2 after:absolute after:w-[60%] after:block after:-mt-2 after:left-[4%]  after:z-[-1]">Expertise</h2>
+              <h2 className="font-semibold text-dark-blue text-4xl mb-4 relative after:content-[''] after:bg-red-medium after:h-2 after:absolute after:w-[60%] after:block after:-mt-2 after:left-[4%]  after:z-[-1]">Expertise</h2>
               <p className="text-left max-w-lg">
                 I&apos;ve spent few years working on my skills. In no particular
                 order, here are a few of them.
@@ -53,7 +53,7 @@ export default async function About() {
                 {profile.skills && profile.skills.map((skill, id) => (
                   <li
                     key={id}
-                    className="border border-light-gold hover:border-blue px-2 py-1 cursor-default"
+                    className="border border-salmon hover:border-dark-slate px-2 py-1 cursor-default"
                   >
                     {skill}
                   </li>

@@ -10,11 +10,11 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'cream': '#F4E4C1',
-        'light-gold': '#E4C580',
-        'light-green': '#15DB95',
-        'blue': '#0D19A3',
-        'dark-blue': '#080F5B'
+        'cream': '#FFF5E0',
+        'salmon': '#FF6969',
+        'red-medium': '#C70039',
+        'dark-slate': '#181823',
+        'dark-blue': '#141E46'
       }
     },
   },

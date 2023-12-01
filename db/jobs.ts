@@ -1,4 +1,4 @@
-[
+const jobs = [
   {
     "_id": "aeb68c3e-1562-4653-8071-ab9a5dae014b",
     "description": "An innovative chat platform inspired by the early Internet chatrooms, connecting users by current interests. My primary role was the refactoring of the code base to TypeScript and to improve the features of the product for a smoother user experience.",
@@ -54,3 +54,5 @@
     ]
   }
 ]
+
+export default jobs

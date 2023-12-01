@@ -1,4 +1,4 @@
-[
+const profile = [
   {
   "_id": "632f18de-70bb-47b7-9570-3ce226c97c5e",
   "_type": "profile",
@@ -92,3 +92,5 @@
   "tagline": "Dynamic event registration form with analysis"
 }
 ]
+
+export default profile

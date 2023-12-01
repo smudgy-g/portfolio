@@ -10,7 +10,7 @@ export default async function Job() {
   return (
     <section className="mt-12 flex flex-col items-center bg-white py-10 text-dark-blue px-4 sm:px-6 lg:px-8">
       <div className="mb-16 relative">
-        <h2 className="font-semibold relative text-4xl after:content-[''] after:bg-light-green after:h-2 after:w-[60%] after:block after:-mt-2 after:left-[4%] after:absolute after:z-[-1]">Work Experience</h2>
+        <h2 className="font-semibold relative text-4xl after:content-[''] after:bg-red-medium after:h-2 after:w-[60%] after:block after:-mt-2 after:left-[4%] after:absolute after:z-[-1]">Work Experience</h2>
         
       </div>
 

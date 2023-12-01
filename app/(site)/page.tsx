@@ -13,7 +13,7 @@ export default async function Home() {
           <article className="text-left flex flex-col md:flex-nowrap md:flex-row md:gap-10 w-full items-center justify-between max-w-[1100px]">
             {profile &&
               <div key={profile._id} className="px-4 md:px-28 lg:pl-28">
-                <h1 className="text-4xl md:text-5xl lg:text-6xl text-light-green font-bold tracking-tight">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl text-red-medium font-bold tracking-tight">
                   {/* {profile.headline} */}
                   Software Developer.
                 </h1>
@@ -44,7 +44,7 @@ export default async function Home() {
               </div>
             }
 
-          <div className="w-full md:w-fit bg-light-gold flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
+          <div className="w-full md:w-fit bg-salmon flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
             <figure className="relative border border-cream min-w-[250px] min-h-[250px]">
               {profile.profileImage &&
                 <Image

@@ -1,4 +1,4 @@
-[
+const projects = [
   {
     "_createdAt": "2023-11-30T08:41:27Z",
     "_id": "c18ddc3c-457c-47c5-a69d-e5c9ae466fa0",
@@ -34,3 +34,5 @@
     "tagline": "AI-powered journal tracking mood & insight query"
   }
 ]
+
+export default projects
