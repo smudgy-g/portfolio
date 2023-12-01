@@ -5,9 +5,10 @@ import type { ProjectType } from "@/types"
 
 export default async function Project() {
   const projects: ProjectType[] = await getProjects()
+  console.log(projects)
 
   return (
-    <main className="max-w-7xl mx-auto md:px-16 px-6">
+    <main className="flex flex-col md:flex-nowrap items-center justify-center mt-24">
       <section className="max-w-2xl mb-16">
         <h1 className="text-3xl font-bold tracking-tight sm:text-5xl mb-6 lg:leading-[3.7rem] leading-tight">
           Featured projects I&apos;ve built over the years
@@ -26,14 +27,14 @@ export default async function Project() {
           <Link
             href={`/projects/${project.slug}`}
             key={project._id}
-            className="flex items-center gap-x-4 bg-[#1d1d20] border border-transparent hover:border-zinc-700 p-4 rounded-lg ease-in-out"
+            className="flex items-center gap-x-4 border border-transparent hover:border-zinc-700 p-4 rounded-lg ease-in-out"
           >
             <Image
               src={project.logo}
               width={60}
               height={60}
               alt={project.name}
-              className="bg-zinc-800 rounded-md p-2"
+              className="rounded-md p-2"
             />
             <div>
               <h2 className="font-semibold mb-1">{project.name}</h2>

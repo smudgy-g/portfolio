@@ -1,16 +1,21 @@
 import type { Metadata } from 'next'
-import { Inter, Titillium_Web } from 'next/font/google'
+import { Inter, Titillium_Web, Poppins } from 'next/font/google'
 import '../globals.css'
-import NavBar from '@/app/(site)/components/global/NavBar'
+import NavBar from '@/components/global/NavBar'
 import { Suspense } from 'react'
-import Footer from '@/app/(site)/components/global/Footer'
+import Footer from '@/components/global/Footer'
 
-const inter = Inter({ subsets: ['latin'], display: 'swap' })
-export const titillium = Titillium_Web({
-  weight:['200', '300', '400', '600', '700', '900'],
-  subsets: ['latin'],
-  display: 'swap'
-  })
+// const inter = Inter({ subsets: ['latin'], display: 'swap' })
+const poppins = Poppins({ 
+  weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900"],
+  subsets: ['latin'], 
+  display: 'swap' 
+})
+// export const titillium = Titillium_Web({
+//   weight:['200', '300', '400', '600', '700', '900'],
+//   subsets: ['latin'],
+//   display: 'swap'
+//   })
 
 export const metadata: Metadata = {
   title: 'Adam Griffiths - Software Developer',
@@ -31,7 +36,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${titillium.className} text-center h-full selection:bg-gray-100 relative`}>
+      <body className={`${poppins.className} text-center h-full selection:bg-gray-100 relative`}>
         <Suspense>
           <NavBar routes={routes} />
         </Suspense>

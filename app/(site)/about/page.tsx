@@ -3,7 +3,7 @@ import { getProfile } from "@/lib/sanity.query"
 import type { ProfileType } from "@/types"
 import { PortableText } from "@portabletext/react"
 import { BiEnvelope, BiFile } from "react-icons/bi"
-import LinkButton from "../components/shared/LinkButton"
+import LinkButton from "../../../components/shared/LinkButton"
 
 export default async function About() {
   const profile: ProfileType = await getProfile()
