@@ -5,22 +5,22 @@ export default async function Project() {
   const projects = db.projects
 
   return (
-    <main className="pt-32 md:pt-48 px-8 md:px-12 bg-light-blue">
-      <header className="mb-12">
-        <h1 className="mx-auto text-5xl font-bold">Projects</h1>
+    <main className="pt-32 lg:pt-48 px-8 md:px-12 ">
+      <header className="mb-12 relative ">
+        <h1 className="mx-auto text-5xl font-bold after:content-[''] after:bg-light-blue after:h-2 after:absolute after:w-44 after:block after:-mt-2 after:left-[40%]  after:z-[-1]">Projects</h1>
       </header>
       <section className="mx-auto max-w-5xl py-12">
-        <ul className="flex flex-wrap">
+        <ul className="flex flex-wrap gap-4 justify-center">
           {projects.map((project, index) => (
             <li 
               key={`project-${index}`}
-              className="relative mb-6 border border-accent shadow-md hover:translate-x-1 hover:-translate-y-1 transition-all ease-in-out duration-500 basis-[calc((100% - 1em) / 2)] max-w-md"
+              className="relative mb-6 bg-cream border border-accent shadow-md hover:translate-x-1 hover:-translate-y-1 transition-all ease-in-out duration-500 basis-[calc((100% - 1em) / 2)] max-w-md"
             >
               <div className="p-8">
                 <h2 className="text-2xl font-semibold">{project.name}</h2>
               </div>
               <div className="p-3 text-left">
-                <p className="text-sm mb-3">{project.tagline}</p>
+                <p className="text-sm mb-4 ">{project.tagline}</p>
                 <p className="text-xs">{project.description}</p>
               </div>
             </li>
