@@ -1,11 +1,8 @@
-import Image from "next/image"
 import Link from "next/link"
-import { getProjects } from "@/lib/sanity.query"
-import type { ProjectType } from "@/types"
+import db from "@/db"
 
 export default async function Project() {
-  const projects: ProjectType[] = await getProjects()
-  console.log(projects)
+  const projects = db.projects
 
   return (
     <main className="flex flex-col md:flex-nowrap items-center justify-center mt-24">
@@ -25,17 +22,10 @@ export default async function Project() {
       <section className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mb-12">
         {projects.map((project) => (
           <Link
-            href={`/projects/${project.slug}`}
+            href={`/projects/${project.slug.current}`}
             key={project._id}
             className="flex items-center gap-x-4 border border-transparent hover:border-zinc-700 p-4 rounded-lg ease-in-out"
           >
-            <Image
-              src={project.logo}
-              width={60}
-              height={60}
-              alt={project.name}
-              className="rounded-md p-2"
-            />
             <div>
               <h2 className="font-semibold mb-1">{project.name}</h2>
               <div className="text-sm text-zinc-400">{project.tagline}</div>
