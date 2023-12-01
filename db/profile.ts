@@ -1,7 +1,5 @@
-const profile = [
-  {
+const profile = {
   "_id": "632f18de-70bb-47b7-9570-3ce226c97c5e",
-  "_type": "profile",
   "email": "adamgriff86@gmail.com",
   "fullBio": [
     {
@@ -41,56 +39,30 @@ const profile = [
     }
   },
   "shortBio": "I'm Adam Griffiths, an enthusiastic software developer specialising in React/Node.js technologies. I love to create beautiful, performant products and user experiences, seeking innotative ways to expand and engage my skills and the world around me.",
-  "skills": [
+  "techStack": [
     "JavaScript",
     "TypeScript",
     "React",
     "NextJS",
     "Vue 3",
     "Tailwind CSS",
-    "Node.js",
+    "NodeJS",
+    "GraphQL",
     "PostgreSQL",
     "MongoDB"
+  ],
+  "skills": [
+    "UI/UX Design",
+    "Database Design",
+    "Software Testing",
+    "Resonsive Web Design",
+    "REST API Design",
+    "Problem Solving"
   ],
   "socialLinks": {
     "github": "https://github.com/smudgy-g",
     "linkedin": "https://linkedin.com/in/adam-james-griffiths"
   }
-},
-{
-  "_createdAt": "2023-11-30T08:41:36Z",
-  "_id": "53fffbab-0090-4842-9352-05895b95e9ca",
-  "_rev": "E134kC9Rmrp3H5j6Wgv2hV",
-  "_type": "project",
-  "_updatedAt": "2023-11-30T16:18:50Z",
-  "coverImage": {
-    "_type": "image",
-    "alt": "Cover image for Papaya project"
-  },
-  "description": [
-    {
-      "_key": "6e3dcac7058b",
-      "_type": "block",
-      "children": [
-        {
-          "_key": "1fe6b669ff71",
-          "_type": "span",
-          "marks": [],
-          "text": "Papaya is an event solution for event planners that allows users to create dynamic guest registration forms for events. The app provide analysis through integrated AI technology using LLM in order to get the insights they need efficiently and easily."
-        }
-      ],
-      "markDefs": [],
-      "style": "normal"
-    }
-  ],
-  "name": "Papaya",
-  "projectUrl": "https://github.com/smudgy-g",
-  "slug": {
-    "_type": "slug",
-    "current": "papaya"
-  },
-  "tagline": "Dynamic event registration form with analysis"
 }
-]
 
 export default profile

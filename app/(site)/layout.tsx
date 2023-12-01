@@ -5,17 +5,12 @@ import NavBar from '@/components/global/NavBar'
 import { Suspense } from 'react'
 import Footer from '@/components/global/Footer'
 
-// const inter = Inter({ subsets: ['latin'], display: 'swap' })
+
 const poppins = Poppins({ 
   weight: ["100" , "200" , "300" , "400" , "500" , "600" , "700" , "800" , "900"],
   subsets: ['latin'], 
   display: 'swap' 
 })
-// export const titillium = Titillium_Web({
-//   weight:['200', '300', '400', '600', '700', '900'],
-//   subsets: ['latin'],
-//   display: 'swap'
-//   })
 
 export const metadata: Metadata = {
   title: 'Adam Griffiths - Software Developer',
@@ -30,13 +25,13 @@ export default function RootLayout({
 
   const routes = [
     {href: '/', title: 'Home'},
-    {href: '/about', title: 'About Me'},
+    {href: '/resume', title: 'My Resumé'},
     {href: '/projects', title: 'My Projects'},
   ]
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} text-center h-full selection:bg-gray-100 relative`}>
+      <body className={`${poppins.className} bg-cream text-light-slate text-center h-full relative`}>
         <Suspense>
           <NavBar routes={routes} />
         </Suspense>

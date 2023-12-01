@@ -1,5 +1,7 @@
 import jobs from './jobs'
-import profile from './jobs'
-import projects from './jobs'
+import profile from './profile'
+import projects from './projects'
 
-export const db = [ jobs, profile, projects ]
+const db = { jobs, profile, projects }
+
+export default db
