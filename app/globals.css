@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 .hero-bg {
-  background: #44318d;
+  background: #00337C;
 }
 
 @media (min-width: 768px) { 
   .hero-bg {
-    background: linear-gradient(90deg, #0D19A3 73%, #E4C580 27%);
+    background: linear-gradient(90deg, #00337C 73%, #BAD7E9 27%);
   }
  }
