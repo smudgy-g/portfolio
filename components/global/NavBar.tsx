@@ -20,7 +20,7 @@ export default function NavBar({ routes }: { routes: Route[] }) {
   }
 
   return (
-    <header className="fixed flex justify-between items-center text-left px-8 md:px-12 top-0 w-full z-50 h-[100px] bg-deep-blue md:bg-transparent ">
+    <header className="fixed flex justify-between items-center text-left px-4 md:px-12 top-0 w-full z-50 py-2 lg:h-[100px] bg-deep-blue md:bg-transparent ">
          
       <Link href="/" className="z-[999]">
         {/* <Image src={open ? RainbowLogo : Logo} height={50} width={50} alt="logo for Adam Grifftihs" /> */}
@@ -30,7 +30,7 @@ export default function NavBar({ routes }: { routes: Route[] }) {
       
       <button 
         onClick={handleClick}
-        className="text-white md:text-dark-purple z-[999] inline-flex border border-transparent p-2 mr-4 hover:border-dark-purple focus:outline-none focus:ring-2 focus:ring-inset focus: ring-dark-purple"
+        className="text-white md:text-dark-purple z-[999] inline-flex border border-transparent p-2 lg:mr-4 hover:border-dark-purple focus:outline-none focus:ring-2 focus:ring-inset focus: ring-dark-purple"
       >
         {open ? (
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-dark-purple">
