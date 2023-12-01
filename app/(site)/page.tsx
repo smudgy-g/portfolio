@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import JobsCard from '../../components/shared/JobsCard'
 import LinkButton from '../../components/shared/LinkButton'
 
 export default  function Home() {
