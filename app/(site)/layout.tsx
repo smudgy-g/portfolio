@@ -31,7 +31,7 @@ export default function RootLayout({
 
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} bg-white text-light-slate text-center h-full relative`}>
+      <body className={`${poppins.className} bg-cream text-light-slate text-center h-full relative`}>
         <Suspense>
           <NavBar routes={routes} />
         </Suspense>

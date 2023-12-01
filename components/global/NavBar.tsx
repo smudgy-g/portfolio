@@ -23,7 +23,8 @@ export default function NavBar({ routes }: { routes: Route[] }) {
     <header className="fixed flex justify-between items-center text-left px-8 md:px-12 top-0 w-full z-50 h-[100px] bg-deep-blue md:bg-transparent ">
          
       <Link href="/" className="z-[999]">
-        <Image src={open ? RainbowLogo : Logo} height={50} width={50} alt="logo for Adam Grifftihs" />
+        {/* <Image src={open ? RainbowLogo : Logo} height={50} width={50} alt="logo for Adam Grifftihs" /> */}
+        <Image src={RainbowLogo} height={50} width={50} alt="logo for Adam Grifftihs" />
       </Link>
       
       

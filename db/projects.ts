@@ -9,22 +9,7 @@ const projects = [
       "_type": "image",
       "alt": "Cover image for Journai"
     },
-    "description": [
-      {
-        "_key": "8483f2ac96b8",
-        "_type": "block",
-        "children": [
-          {
-            "_key": "27f47b0b4687",
-            "_type": "span",
-            "marks": [],
-            "text": "An AI-powered personal journal that itegrates Ai and Large Language Models to track the users mood through analysis of each journal entry with mapping to a chart.  Users also have the posibility to query for insights into their ournal history."
-          }
-        ],
-        "markDefs": [],
-        "style": "normal"
-      }
-    ],
+    "description": "An AI-powered personal journal that itegrates Ai and Large Language Models to track the users mood through analysis of each journal entry with mapping to a chart.  Users also have the posibility to query for insights into their ournal history.",
     "name": "Journai",
     "projectUrl": "https://github.com/smudgy-g",
     "slug": {

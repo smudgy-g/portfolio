@@ -3,7 +3,7 @@ const jobs = [
   {
     "_id": "aeb68c3e-1562-4653-8071-ab9a5dae014b",
     "description": "Built interactive client-side web applications using React and Next.js with a focus on clean, reusable code and superior user experiences.",
-    "startDate": "2023",
+    "startDate": "2022",
     "endDate": "Present",
     "jobTitle": "Frontend Developer",
     "logo": {
@@ -25,29 +25,6 @@ const jobs = [
     ]
 
 
-  },
-  {
-    "_id": "aeb68c3e-1562-4653-8071-ab9a5dae014b",
-    "description": "An innovative chat platform inspired by the early Internet chatrooms, connecting users by current interests. My primary role was the refactoring of the code base to TypeScript and to improve the features of the product for a smoother user experience.",
-    "startDate": "2023",
-    "endDate": "2023",
-    "jobTitle": "Full Stack Developer",
-    "logo": {
-      "_type": "image",
-      "asset": {
-        "_ref": "/medusa_de_logo.jpg"
-      }
-    },
-    "responsibilities": [
-      "Collaborated as a vital member of a 4-person developer team in the development of an innovative chat platform to promote real-time connections based on users' shared interests.",
-      "Played a vital role in the successful conversion of the code base to Typescript, resulting in improved code readability, scalability, and reliability through effective refactoring.",
-      "Made significant contributions to enhancing the user experience by elevating the overall code quality and improving the efficiency and stability of the application."
-    ],
-    "name": "Medusa",
-    "url": "https://64f1a2f3c1b6bb42dab99971--golden-basbousa-7bd2a4.netlify.app/",
-    "tech": [
-      "React", "Express", "Web Sockets", "TypeScript", "Node.js"
-    ]
   },
   {
     "_id": "b4b303d2-356d-4012-98a4-703d06f6a16b",
@@ -98,6 +75,29 @@ const jobs = [
     "url": "https://github.com/smudgy-g/kiosk-inventory-management",
     "tech": [
       "React", "Express", "Postgres", "TypeScript", "Node.js"
+    ]
+  },
+  {
+    "_id": "aeb68c3e-1562-4653-8071-ab9a5dae014b",
+    "description": "An innovative chat platform inspired by the early Internet chatrooms, connecting users by current interests. My primary role was the refactoring of the code base to TypeScript and to improve the features of the product for a smoother user experience.",
+    "startDate": "2023",
+    "endDate": "2023",
+    "jobTitle": "Full Stack Developer",
+    "logo": {
+      "_type": "image",
+      "asset": {
+        "_ref": "/medusa_de_logo.jpg"
+      }
+    },
+    "responsibilities": [
+      "Collaborated as a vital member of a 4-person developer team in the development of an innovative chat platform to promote real-time connections based on users' shared interests.",
+      "Played a vital role in the successful conversion of the code base to Typescript, resulting in improved code readability, scalability, and reliability through effective refactoring.",
+      "Made significant contributions to enhancing the user experience by elevating the overall code quality and improving the efficiency and stability of the application."
+    ],
+    "name": "Medusa",
+    "url": "https://64f1a2f3c1b6bb42dab99971--golden-basbousa-7bd2a4.netlify.app/",
+    "tech": [
+      "React", "Express", "Web Sockets", "TypeScript", "Node.js"
     ]
   }
 ]

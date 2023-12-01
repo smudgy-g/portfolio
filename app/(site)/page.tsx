@@ -31,7 +31,7 @@ export default  function Home() {
               </ul>
             </div>
 
-            <div className="w-full md:w-fit bg-accent flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
+            <div className="w-full md:w-fit bg-light-blue flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
               <figure className="relative border border-dark-purple min-w-[250px] min-h-[250px]">
                 <Image
                   src="/profile_image.png"
@@ -47,22 +47,22 @@ export default  function Home() {
       
       <section className="flex justify-center items-center my-12">
         <div className="flex flex-col text-left px-4 md:px-28 gap-8 max-w-6xl">
-          <article className="w-1/2 px-8">
+          <article className=" lg:w-1/2 space-y-3">
             <h1 className="text-4xl font-bold">Engineering. Develop.</h1>
             <p>I come fully equipped and preloaded with JavaScript and love to develop performant web applications on both the server and the client side. I enjoy developing complex interfaces with technologies like GraphQL, Next.js and Tailwind CSS.</p>
           </article>
-          <article className="w-1/2 self-end px-8">
+          <article className="lg:w-1/2 md:self-end space-y-3">
             <h1 className="text-4xl font-bold">Versatile. Curious.</h1>
             <p>I am passionate about continuous learning and tackling new challenges to deliver intuitive, engaging experiences across customer-facing and internal-facing applications. I am passionate about building user-friendly and accessible web applications. I am also committed to writing high-quality code that meets the highest standards for security, maintainability, and performance</p>
           </article>
         </div>
       </section>
 
-      <section className="flex justify-center items-center my-12 bg-deep-blue text-white">
+      <section className="flex justify-center items-center mt-12 bg-light-blue">
         <div className="flex text-left px-4 md:px-28 py-12 gap-8 max-w-6xl">
           <article>
             <h1 className="text-4xl font-bold">Insight.</h1>
-            <div className="mt-7 space-y-6 w-1/2">
+            <div className="mt-7 space-y-6 lg:w-2/3">
               <p>I have over two years of experience designing and building performant and scalable user interfaces using Javascript technologies and frameworks.</p>
 
               <p>In this time I have built performant products and solutions ranging from websites, to e-commerce platforms, to inventory management.</p>
