@@ -47,7 +47,7 @@ export default  function Home() {
       <section className="flex justify-center items-center my-12">
         <div className="flex flex-col text-left px-4 md:px-28 gap-8 max-w-6xl">
           <article className=" lg:w-1/2 space-y-3">
-            <h1 className="text-4xl font-bold">Engineering. Develop.</h1>
+            <h1 className="text-4xl font-bold">Engineer. Develop.</h1>
             <p>I come fully equipped and preloaded with JavaScript and love to develop performant web applications on both the server and the client side. I enjoy developing complex interfaces with technologies like GraphQL, Next.js and Tailwind CSS.</p>
           </article>
           <article className="lg:w-1/2 md:self-end space-y-3">
