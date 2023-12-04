@@ -30,6 +30,7 @@ export default function NavBar({ routes }: { routes: Route[] }) {
       
       <button 
         onClick={handleClick}
+        aria-label={open ? "Close navigation menu" : "Open navigation menu"}
         className="text-white md:text-dark-purple z-[999] inline-flex border border-transparent p-2 lg:mr-4 hover:border-dark-purple focus:outline-none focus:ring-2 focus:ring-inset focus: ring-dark-purple"
       >
         {open ? (
