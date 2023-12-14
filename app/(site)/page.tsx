@@ -25,7 +25,7 @@ export default function Page () {
             <h2>Software Developer</h2>
           </div>
 
-          <div className="w-full md:w-fit flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
+          <div className="w-full md:w-fit flex justify-center items-center md:bg-transparent lg:mr-28">
             <figure className="relative min-w-[250px] min-h-[250px] ">
               <Image
                 src={spaceman}
@@ -44,7 +44,7 @@ export default function Page () {
 
       <section 
         id="about"
-        className="flex flex-col md:justify-between items-center py-24 px-4 md:p-0"
+        className="flex flex-col md:justify-between items-center pt-24 px-4 md:p-0"
       >
         <div className="prose leading-5 md:leading-normal self-center my-auto max-w-sm lg:max-w-3xl lg:columns-2 text-justify gap-5 tracking-wide lg:space-x-10">
           <p>Hey there! I&apos;m <span className="font-bold text-xl italic text-accent">Adam</span>, a JavaScript developer fueled by enthusiasm and positivity. Believe it or not, I used to rock the world of hospitality management before following my true passion and diving headfirst into the realm of web development.</p>
