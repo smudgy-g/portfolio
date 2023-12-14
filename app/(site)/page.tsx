@@ -19,7 +19,7 @@ export default function Page () {
         className="flex flex-col items-center justify-center bg-[url('/assets/sprinkle.svg')] bg-fixed bg-repeat"
       >
         <article className="text-left flex flex-col md:flex-nowrap md:flex-row md:gap-10 w-full items-center justify-between max-w-4xl">
-          <div className="px-4 md:px-12">
+          <div className="mt-10 px-4 md:px-12">
             <h1 className="">Adam Griffiths</h1>
             <p className="mt-4 font-bold italic text-accent md:text-2xl lg:text-3xl">Enthusiastic</p> 
             <h2>Software Developer</h2>
@@ -44,9 +44,9 @@ export default function Page () {
 
       <section 
         id="about"
-        className="flex flex-col md:justify-between items-center py-24 px-2 md:p-0"
+        className="flex flex-col md:justify-between items-center py-24 px-4 md:p-0"
       >
-        <div className="prose self-center my-auto max-w-sm lg:max-w-3xl lg:columns-2 text-justify gap-5 tracking-wide lg:space-x-10">
+        <div className="prose leading-5 md:leading-normal self-center my-auto max-w-sm lg:max-w-3xl lg:columns-2 text-justify gap-5 tracking-wide lg:space-x-10">
           <p>Hey there! I&apos;m <span className="font-bold text-xl italic text-accent">Adam</span>, a JavaScript developer fueled by enthusiasm and positivity. Believe it or not, I used to rock the world of hospitality management before following my true passion and diving headfirst into the realm of web development.</p>
           <p>With a background in hospitality, I bring many skills to my coding ventures. I may have traded cocktails and kitchens for algorithms and functions, but I&apos;ve learned valuable lessons along the way. Now, armed with the power of JavaScript, React, and Node.js, I&apos;m on a mission to create captivating digital experiences.</p>
           <p>I approach my work with positivity and an unwavering love for the craft. Every line of code I write is infused with excitement.</p>
@@ -67,9 +67,7 @@ export default function Page () {
         id="tech"
         className="flex flex-col gap-7 md:gap-4 md:justify-between items-center py-24 px-2 md:p-0"
       >
-
-        <div className="my-auto space-y-8">
-          <div className="flex gap-12 flex-col md:flex-row md:gap-6">
+          <div className="flex gap-12 flex-col md:flex-row flex-wrap md:justify-center md:gap-6 md:max-w-3xl lg:max-w-6xl my-auto">
             <div className="flex flex-col gap-6 max-w-md">
               <h4 className="self-end md:self-center">Frontend</h4>
               <ul className="space-y-3 columns-2">
@@ -94,21 +92,21 @@ export default function Page () {
                 ))}
               </ul>
             </div>
-          </div>
+          
 
-          <div className="mt-8 hidden md:flex flex-col gap-6 max-w-md mx-auto">
-            <h4 className="self-end md:self-center">Soft Skills</h4>
-            <ul className="space-y-3 columns-2">
-              {skills && skills.map((skill, i) => (
-                <li key={`skill${i}`}
-                  className="border border-neutral px-2 py-1 rounded-md lg:text-lg lg:px-3 lg:py-2"
-                >
-                  {skill}
-                </li>
-              ))}
-            </ul>
+            <div className="hidden md:flex flex-col gap-6 max-w-md mx-auto">
+              <h4 className="self-end md:self-center">Other Skills</h4>
+              <ul className="space-y-3 columns-2">
+                {skills && skills.map((skill, i) => (
+                  <li key={`skill${i}`}
+                    className="border border-neutral px-2 py-1 rounded-md lg:text-lg lg:px-3 lg:py-2"
+                  >
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div>
         <h3 className="self-end order-first md:order-2">Tech Stack</h3>
       </section>
 
