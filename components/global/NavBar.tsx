@@ -75,7 +75,7 @@ export default function NavBar() {
       </nav>
     </header>
 
-    <aside className="hidden absolute md:visible bottom-3 left-2 z-50">
+    <aside className="hidden absolute md:block bottom-3 left-2 z-50">
       <SocialActionsBar />
     </aside>
   </>
