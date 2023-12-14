@@ -2,12 +2,34 @@
 @tailwind components;
 @tailwind utilities;
 
-.hero-bg {
-  background: #00337C;
+@layer base {
+  section {
+    @apply snap-start h-screen relative
+  }
+
+  h1 {
+    @apply text-7xl md:text-8xl lg:text-9xl text-primary font-bold tracking-tight
+  }
+
+  h2 {
+    @apply text-5xl md:text-7xl lg:text-8xl font-bold leading-10
+  }
+
+  h3 {
+    @apply stroke-black text-[3.25rem] md:text-8xl lg:text-[9em] leading-10 uppercase
+  }
+
+  h4 {
+    @apply text-2xl text-secondary italic md:text-3xl lg:text-4xl
+  }
+
+  .nav-link {
+    @apply leading-10 relative transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-accent no-underline block
+  }
+
+  .nav-icon {
+    @apply transition-all duration-300 ease-in-out fill-white hover:translate-x-1 hover:fill-accent h-8 w-8 md:h-10 md:w-10
+  }
+
 }
 
-@media (min-width: 768px) { 
-  .hero-bg {
-    background: linear-gradient(90deg, #00337C 73%, #BAD7E9 27%);
-  }
- }

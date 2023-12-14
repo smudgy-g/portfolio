@@ -37,11 +37,12 @@ export type ProjectType = {
   coverImage: {
     alt: string | null,
     image: string,
-  };
-  description: string
+  },
+  description: string,
 }
 
 export type Route = {
-  title: string,
-  href: string
+  label: string,
+  href: string,
+  icon: any
 }

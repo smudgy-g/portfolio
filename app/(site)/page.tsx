@@ -1,81 +1,126 @@
 import Image from 'next/image'
-import LinkButton from '../../components/shared/LinkButton'
+import { ChevronDoubleDownIcon } from '@heroicons/react/24/outline'
+import spaceman from '@/images/spaceman.png'
 
-export default  function Home() {
+import db from "@/db"
+import ContactForm from '@/components/ContactForm'
+import ProjectCarousel from '@/components/ProjectCarousel'
+
+
+export default function Page () {
+  const tech = db.profile.techStack
+  const skills = db.profile.skills
+  const about = db.profile.about
 
   return (
     <>
-      <section className="hero-bg pt-32 md:pb-16 md:pt-40 flex flex-col items-center justify-center">
-          <article className="text-left flex flex-col md:flex-nowrap md:flex-row md:gap-10 w-full items-center justify-between max-w-6xl">
-            <div className="px-4 md:px-28">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl text-accent font-bold tracking-tight">
-                Software Developer.
-              </h1>
-              <p className="text-base text-cream leading-relaxed my-3">
-                {`I'm Adam Griffiths, an enthusiastic software developer specialising in React/Node.js technologies. I love to create beautiful, performant products and user experiences, seeking innotative ways to expand and engage my skills and the world around me.`}
+      <section 
+        id="home"
+        className="flex flex-col items-center justify-center bg-fixed bg-[url('/sprinkle.svg')] bg-repeat"
+      >
+        <article className="text-left flex flex-col md:flex-nowrap md:flex-row md:gap-10 w-full items-center justify-between max-w-4xl">
+          <div className="px-4 md:px-12">
+            <h1 className="">Adam Griffiths</h1>
+            <p className="mt-4 font-bold italic text-accent md:text-2xl lg:text-3xl">Enthusiastic</p> 
+            <h2>Software Developer</h2>
+          </div>
 
-              </p>
-              
-              <ul className="flex items-center justify-evenly md:justify-start gap-x-6 my-8 md:my-10">
-                <li>
-                  <LinkButton href='https://github.com/smudgy-g'>
-                    Github
-                  </LinkButton>
-                </li>
-                <li>
-                  <LinkButton href='https://www.linkedin.com/in/adam-james-griffiths/'>
-                    LinkedIn
-                  </LinkButton>
-                </li>
+          <div className="w-full md:w-fit flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
+            <figure className="relative min-w-[250px] min-h-[250px] ">
+              <Image
+                src={spaceman}
+                height={200}
+                width={200}
+                alt="Profile image of Adam Griffiths"
+                className="translate-x-7 md:-mt-10 md:-ml-5 rotate-45 md:rotate-0"
+              />
+            </figure>
+          </div>
+        </article>
+        <a href="#about" role="button" className="btn btn-circle btn-outline btn-primary bg-base-100 absolute bottom-5">
+          <ChevronDoubleDownIcon className="w-10 h-10"/>
+        </a>
+      </section>
+
+      <section 
+        id="about"
+        className="flex flex-col md:justify-between items-center py-24 px-2 md:p-0"
+      >
+        <div className="prose self-center my-auto max-w-sm lg:max-w-3xl lg:columns-2 text-justify gap-5 tracking-wide lg:space-x-10">
+          <p>Hey there! I&apos;m <span className="font-bold text-xl italic text-accent">Adam</span>, a JavaScript developer fueled by enthusiasm and positivity. Believe it or not, I used to rock the world of hospitality management before following my true passion and diving headfirst into the realm of web development.</p>
+          <p>With a background in hospitality, I bring many skills to my coding ventures. I may have traded cocktails and kitchens for algorithms and functions, but I&apos;ve learned valuable lessons along the way. Now, armed with the power of JavaScript, React, and Node.js, I&apos;m on a mission to create captivating digital experiences.</p>
+          <p>I approach my work with positivity and an unwavering love for the craft. Every line of code I write is infused with excitement.</p>
+        </div>
+        <h3 className="self-end order-first md:order-2">About Me</h3>
+      </section>
+
+      <section 
+        id="projects"
+        className="flex flex-col md:justify-between items-evenly py-24 md:p-0"
+      >
+        <ProjectCarousel />
+        <h3 className="self-end order-first md:order-2">Projects</h3>
+       
+      </section>
+
+      <section 
+        id="tech"
+        className="flex flex-col gap-7 md:gap-4 md:justify-between items-center py-24 px-2 md:p-0"
+      >
+
+        <div className="my-auto space-y-8">
+          <div className="flex gap-12 flex-col md:flex-row md:gap-6">
+            <div className="flex flex-col gap-6 max-w-md">
+              <h4 className="self-end md:self-center">Frontend</h4>
+              <ul className="space-y-3 columns-2">
+                {tech && tech.frontend.map((tech, i) => (
+                  <li key={`frontend${i}`}
+                    className="border border-neutral px-2 py-1 rounded-md lg:text-lg lg:px-3 lg:py-2"
+                  >
+                    {tech}
+                  </li>
+                ))}
               </ul>
             </div>
-
-            <div className="w-full md:w-fit bg-light-blue flex justify-center items-center p-6 md:bg-transparent lg:pr-28">
-              <figure className="relative border border-dark-purple min-w-[250px] min-h-[250px]">
-                <Image
-                  src="/profile_image.png"
-                  height={200}
-                  width={200}
-                  alt="Profile image of Adam Griffiths"
-                  className="-mt-3 ml-2 md:-mt-10 md:-ml-7"
-                />
-              </figure>
+            <div className=" flex flex-col gap-6 max-w-md">
+              <h4 className="self-end md:self-center">Backend</h4>
+              <ul className="space-y-3 columns-2">
+                {tech && tech.backend.map((tech, i) => (
+                  <li key={`backend${i}`}
+                    className="border border-neutral px-2 py-1 rounded-md lg:text-lg lg:px-3 lg:py-2"
+                  >
+                    {tech}
+                  </li>
+                ))}
+              </ul>
             </div>
-          </article>
-      </section>
-      
-      <section className="flex justify-center items-center my-12">
-        <div className="flex flex-col text-left px-4 md:px-28 gap-8 max-w-6xl">
-          <article className=" lg:w-1/2 space-y-3">
-            <h1 className="text-4xl font-bold">Engineer. Develop.</h1>
-            <p>I come fully equipped and preloaded with JavaScript and love to develop performant web applications on both the server and the client side. I enjoy developing complex interfaces with technologies like GraphQL, Next.js and Tailwind CSS.</p>
-          </article>
-          <article className="lg:w-1/2 md:self-end space-y-3">
-            <h1 className="text-4xl font-bold">Versatile. Curious.</h1>
-            <p>I am passionate about continuous learning and tackling new challenges to deliver intuitive, engaging experiences across customer-facing and internal-facing applications. I am passionate about building user-friendly and accessible web applications. I am also committed to writing high-quality code that meets the highest standards for security, maintainability, and performance</p>
-          </article>
+          </div>
+
+          <div className="mt-8 hidden md:flex flex-col gap-6 max-w-md mx-auto">
+            <h4 className="self-end md:self-center">Soft Skills</h4>
+            <ul className="space-y-3 columns-2">
+              {skills && skills.map((skill, i) => (
+                <li key={`skill${i}`}
+                  className="border border-neutral px-2 py-1 rounded-md lg:text-lg lg:px-3 lg:py-2"
+                >
+                  {skill}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
+        <h3 className="self-end order-first md:order-2">Tech Stack</h3>
       </section>
 
-      <section className="flex justify-center items-center mt-12 bg-light-blue">
-        <div className="flex text-left px-4 md:px-28 py-12 gap-8 max-w-6xl">
-          <article>
-            <h1 className="text-4xl font-bold">Insight.</h1>
-            <div className="mt-7 space-y-6 lg:w-2/3">
-              <p>I have over two years of experience designing and building performant and scalable user interfaces using Javascript technologies and frameworks.</p>
-
-              <p>In this time I have built performant products and solutions ranging from websites, to e-commerce platforms, to inventory management.</p>
-
-              <p>I have a proven track record of contributing to code quality through code reviews, refactors and other initiatives to streamline development processes. My experience also includes working closely with back-end teams to develop and integrate custom UI components while ensuring performance, accessibility and security standards are met.</p>
-
-              <p>I am passionate about building user-friendly and accessible web applications. I am also committed to writing high-quality code that meets the highest standards for security, maintainability, and performance. I am a dedicated professional with a strong work ethic and a genuine passion for programming that gives me a productive edge. I like to stay up-to-date with emerging technologies and industry best practices, I work well in teams, and have experience in fast-paced and dynamic environments.</p>
-
-            </div>
-          </article>
-          <article>
-            
-          </article>
+      <section 
+        id="contact"
+        className="flex flex-col md:justify-between py-24 md:p-0"
+      >
+        <div className="order-2 md:order-first my-auto self-center">
+          
+          <ContactForm />
         </div>
+        <h3 className="order-first md:order-2 self-end">Contact</h3>
       </section>
     </>
   )
