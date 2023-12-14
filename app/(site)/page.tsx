@@ -16,7 +16,7 @@ export default function Page () {
     <>
       <section 
         id="home"
-        className="flex flex-col items-center justify-center bg-fixed bg-[url('/sprinkle.svg')] bg-repeat"
+        className="flex flex-col items-center justify-center bg-[url('/assets/sprinkle.svg')] bg-fixed bg-repeat"
       >
         <article className="text-left flex flex-col md:flex-nowrap md:flex-row md:gap-10 w-full items-center justify-between max-w-4xl">
           <div className="px-4 md:px-12">
