@@ -30,7 +30,7 @@ export default function RootLayout({
             {/* <NavBar routes={routes} /> */}
             <NavBar />
           </Suspense>
-        <main className="w-full h-screen overflow-auto snap-y snap-mandatory scroll-smooth">
+        <main className="w-full h-[calc(100dvh)] overflow-auto snap-y snap-mandatory scroll-smooth">
           {children}
         </main>
       </body>

@@ -4,7 +4,7 @@
 
 @layer base {
   section {
-    @apply snap-start h-screen relative
+    @apply snap-start h-[calc(100dvh)] relative
   }
 
   h1 {
@@ -20,7 +20,7 @@
   }
 
   h4 {
-    @apply text-2xl text-secondary italic md:text-3xl lg:text-4xl
+    @apply text-xl text-secondary italic md:text-2xl
   }
 
   .nav-link {
