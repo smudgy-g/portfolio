@@ -37,7 +37,7 @@ export type ProjectType = {
   coverImage: {
     alt: string | null,
     image: string,
-  };
+  },
   description: string,
 }
 
