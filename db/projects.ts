@@ -8,7 +8,7 @@ const projects = [
   {
     "description": "Integrated OpenAI API and Langchain for registration form  & event planning assistance. Using LLM integration, users can gain quick analysis and insights into guests' needs and profiles.",
     "name": "papaya",
-    "projectUrl": "https://github.com/smudgy-g",
+    "projectUrl": "https://github.com/smudgy-g/papaya",
     "tagline": "Dynamic PageForm builder with integrated AI"
   },
   
