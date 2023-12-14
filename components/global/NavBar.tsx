@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRef, useState } from 'react'
 import moon from '@/images/moon.png'
 import { ArrowDownTrayIcon } from '@heroicons/react/24/solid'
 import SocialActionsBar from "../SocialActionsBar"
@@ -19,6 +19,7 @@ const routes = [
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false)
+  const navButtonRef = useRef<HTMLInputElement>(null)
 
   function handleClick() {
     setIsOpen(!isOpen)
@@ -48,7 +49,7 @@ export default function NavBar() {
         </ul>
 
       <label className="btn btn-circle swap swap-rotate md:hidden z-[100]" aria-label={isOpen ? "close menu" : "open menu"} >
-        <input type="checkbox" onClick={handleClick} />
+        <input ref={navButtonRef} checked={isOpen} type="checkbox" onClick={handleClick} />
         {/* hamburger icon */}
         <svg className="swap-off fill-current" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
         {/* close icon */}

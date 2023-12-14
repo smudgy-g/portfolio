@@ -56,7 +56,7 @@ export default function ContactForm () {
         </label>
   
         <div className="flex justify-end">
-          <button className="mt-12 btn btn-outline btn-primary">
+          <button className="mt-8 md:mt-12 btn btn-outline btn-primary">
             <span>🚀</span> Send
           </button>
         </div>
