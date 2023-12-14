@@ -17,7 +17,7 @@ export default function ProjectCarousel () {
   const [currentProject, setCurrentProject] = useState<Project>(projects[0])
 
   return (
-    <div className="mx-2 mt-10 md:mx-auto md:my-auto flex flex-col gap-7 lg:flex-row md:gap-20 items-center ">
+    <div className="mx-2 mt-8 md:mx-auto md:my-auto flex flex-col gap gap-2 lg:flex-row md:gap-20 items-center ">
       
       <div className="carousel carousel-center max-w-full md:max-w-lg p-4 space-x-4 rounded-box md:text-left">
         {projects && projects.map((project, i) => (
