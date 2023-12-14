@@ -42,6 +42,7 @@ export type ProjectType = {
 }
 
 export type Route = {
-  title: string,
-  href: string
+  label: string,
+  href: string,
+  icon: any
 }

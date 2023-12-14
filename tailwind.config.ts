@@ -6,19 +6,26 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class',
-  theme: {
-    extend: {
-      colors: {
-        'accent': '#EB455F',
-        'light-blue': '#BAD7E9',
-        'deep-blue': '#00337C',
-        'light-slate': '#2B3467',
-        'dark-purple': '#13005A',
-        'cream': '#FCFFE7'
+  daisyui: {
+    themes: [
+      {
+        space: {
+          "primary": "#e90064",
+          "secondary": "#ec4899",
+          "accent": "#f59e0b",
+          "neutral": "#111827",
+          "base-100": "#03070a",
+          "info": "#00f4ff",
+          "success": "#53ed1a",
+          "warning": "#fcd34d",
+          "error": "#ff0041",
+        },
       }
-    },
+    ],
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("daisyui"),
+  ],
 }
 export default config

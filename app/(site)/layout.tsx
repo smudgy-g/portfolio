@@ -1,9 +1,8 @@
 import type { Metadata } from 'next'
 import { Inter, Titillium_Web, Poppins } from 'next/font/google'
 import '../globals.css'
-import NavBar from '@/components/global/NavBar'
 import { Suspense } from 'react'
-import Footer from '@/components/global/Footer'
+import NavBar from '@/components/global/NavBar'
 
 
 const poppins = Poppins({ 
@@ -14,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Adam Griffiths - Software Developer',
-  description: 'The personal portfolio site of Adam Griffiths. Bootstrapped with Next.js with headless Sanity CMS.',
+  description: '',
 }
 
 export default function RootLayout({
@@ -23,24 +22,17 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
 
-  const routes = [
-    {href: '/', title: 'Home'},
-    {href: '/resume', title: 'My Resumé'},
-    {href: '/projects', title: 'My Projects'},
-  ]
-
+  
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} bg-cream text-light-slate text-center h-full relative`}>
-        <Suspense>
-          <NavBar routes={routes} />
-        </Suspense>
-        <main className="mx-auto">
+      <body className={`${poppins.className} w-screen text-center relative`}>
+          <Suspense>
+            {/* <NavBar routes={routes} /> */}
+            <NavBar />
+          </Suspense>
+        <main className="w-full h-screen overflow-auto snap-y snap-mandatory scroll-smooth">
           {children}
         </main>
-        <Suspense>
-          <Footer  routes={routes} />
-        </Suspense>
       </body>
     </html>
   )
