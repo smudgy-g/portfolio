@@ -13,7 +13,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: 'Adam Griffiths - Software Developer',
-  description: '',
+  description: 'Portfolio of Adam Griffiths, Full-Stack Software Developer. Specializing in Javascript technologies with a focus on Next.js, Node.js and React for innovative solutions.',
 }
 
 export default function RootLayout({
