@@ -12,10 +12,10 @@ const projects = [
     "tagline": "Dynamic PageForm builder with integrated AI"
   },
 {
-    "description": "Kiosk is an inventory ordering app allowing businesses to easily add/remover and order products in a single app.",
+    "description": "Kiosk consolidates all your ordering needs into one convenient platform, saving you time and effort. Whether you need to restock ingredients, beverages, or other supplies, kiosk has got you covered.",
     "name": "kiosk",
     "projectUrl": "https://github.com/smudgy-g/kiosk-inventory-management",
-    "tagline": "Single point ordering for bars & restaurants."
+    "tagline": "The Mobile-Friendly Inventory Management App for Restaurants and Bars"
   },
 {
     "description": "Lendify is a community marketplace platform with a focus on lending where users can leverage what they have and access what they need while earning credits and saving money. We strive to revolutionize the way people use and share everyday items, making ownership an option, not a necessity.",
