@@ -24,7 +24,7 @@ export default function ProjectCarousel () {
         <div className="carousel-item rounded-box bg-neutral" key={`project${i}`}>
           <div className="card card-compact w-56 md:w-96 bg-base-100 border shadow-xl">
             <figure>
-              <Image src={`/assets/${project.name}.png`} height={250} width={250} alt=`image for ${project.name} app` className="object-none h-20 w-full md:h-40 lg:h-56"/>
+              <Image src={`/assets/${project.name}.png`} height={250} width={250} alt=`` className="object-none h-20 w-full md:h-40 lg:h-56"/>
             </figure>
             <div className="card-body">
               <h2 className="card-title justify-center capitalize">{project.name}</h2>
