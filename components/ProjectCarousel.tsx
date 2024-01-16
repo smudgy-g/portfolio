@@ -18,7 +18,7 @@ export default function ProjectCarousel () {
 
   return (
     <div className="mx-2 mt-8 md:mx-auto md:my-auto flex flex-col gap gap-2 lg:flex-row md:gap-20 items-center">
-      <div className="carousel carousel-center max-w-full md:max-w-lg p-4 space-x-4 rounded-box md:text-left">
+      <div className="flex-1 carousel carousel-center max-w-full md:max-w-lg lg:max-w-xl p-4 space-x-4 rounded-box md:text-left">
         {projects && projects.map((project, i) => (
         <div className="carousel-item rounded-box bg-neutral" key={`project${i}`}>
           <div className="card card-compact w-56 md:w-96 bg-base-100 border shadow-xl">
