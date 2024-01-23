@@ -6,10 +6,10 @@ const projects = [
     "tagline": "Exhibit is a social media platform inspired by Instagram."
   },
   {
-    "description": "Rendez is an event management and ticketing platform for everybody.",
+    "tagline": "Rendez is an event management and ticketing platform for everybody.",
     "name": "rendez",
     "projectUrl": "https://rendez.vercel.app/",
-    "tagline": "The service allows users to browse, create, and promote local events. Users are able to log in and purchase tickets to events securely and access related events, past orders and create and edit local events."
+    "description": "The service allows users to browse, create, and promote local events. Users are able to log in and purchase tickets to events securely and access related events, past orders and create and edit local events."
   },
 {
     "description": "Kiosk consolidates all your ordering needs into one convenient platform, saving you time and effort. Whether you need to restock ingredients, beverages, or other supplies, kiosk has got you covered.",
