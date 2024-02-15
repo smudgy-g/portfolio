@@ -14,7 +14,7 @@ const projects = [
 {
     "description": "Kiosk consolidates all your ordering needs into one convenient platform, saving you time and effort. Whether you need to restock ingredients, beverages, or other supplies, kiosk has got you covered.",
     "name": "kiosk",
-    "projectUrl": "https://github.com/smudgy-g/kiosk-inventory-management",
+    "projectUrl": "https://kyosk.vercel.app/",
     "tagline": "The Mobile-Friendly Inventory Management App for Restaurants and Bars"
   },
 {
