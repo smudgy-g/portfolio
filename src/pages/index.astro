@@ -1,8 +1,19 @@
 ---
-import Header from '../components/Header.astro';
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Work from '../components/Work.astro';
+import {Content as Summary} from '../content/summary.md';
+// import Container from '../components/Container.astro'
 ---
 
 <Layout>
 	<Header />
+
+	<div class="my-14">
+		<Summary/>
+	</div>
+	
+	<section class="my-12">
+		<Work />
+	</section>
 </Layout>

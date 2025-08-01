@@ -1,0 +1,33 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content'
+
+const jobs: CollectionEntry<'jobs'>[] = await getCollection('jobs')
+---
+
+<div>
+    <h3>Work Experience</h3>
+    <div class="grid gap-10 mt-6">
+        {jobs.map((job: CollectionEntry<'jobs'>) => (
+            <div class="flex gap-8">
+                <div class="shrink-0 min-w-28">
+                    <span class="text-gray-600 leading-8">{job.data.date}</span>
+                </div>
+                <div>
+                    <p class="font-medium text-lg/8">
+                        <span class="font-medium">{job.data.position} </span>
+                        at
+                        <span class="font-medium">{job.id}</span>
+                    </p>
+                    <p class="">{job.data.summary}</p>
+    
+                    <ul class="list-disc ml-8 mt-4">
+                        {job.data.responisibilites.map((item: string) => (
+                            <li class="">{item}</li>
+                        ))}
+                    </ul>
+    
+                </div>
+            </div>
+        ))}
+    </div>
+</div>
