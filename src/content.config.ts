@@ -7,17 +7,17 @@ const jobs = defineCollection({
         date: z.string(),
         position: z.string(),
         summary: z.string(),
-        responisibilites: z.array(z.string()),
+        responsibilities: z.array(z.string()).nullable(),
     }),
 });
 
 const projects = defineCollection({
     loader: file('src/content/projects.yaml'),
     schema: z.object({
-        date: z.string(),
         position: z.string(),
-        summary: z.string(),
-        responisibilites: z.array(z.string()),
+        date: z.string(),
+        url: z.string(),
+        description: z.string(),
     }),
 });
 
@@ -25,10 +25,10 @@ const sideProjects = defineCollection({
     loader: file('src/content/side_projects.yaml'),
     schema: z.object({
         date: z.string(),
-        position: z.string(),
-        summary: z.string(),
-        responisibilites: z.array(z.string()),
+        technologies: z.array(z.string()),
+        url: z.string(),
+        description: z.string(),
     }),
 });
 
-export const collections = { jobs };
+export const collections = { jobs, projects, sideProjects };
