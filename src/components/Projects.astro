@@ -8,12 +8,12 @@ const projects: CollectionEntry<'projects'>[] = await getCollection('projects')
     <h3>Projects</h3>
     <div class="grid gap-10 mt-6">
         {projects.map(({data, id}) => (
-            <div class="flex gap-8">
+            <div class="flex flex-col md:flex-row gap-2 md:gap-8">
                 <div class="shrink-0 min-w-28">
                     <span class="text-gray-600 leading-8">{data.date}</span>
                 </div>
-                <div>
-                    <p class="text-base/8">
+                <div class="space-y-2">
+                    <p class="text-base/8 text-balance">
                         <span class="font-medium">{data.position} </span>
                         at
                         <span class="">{id}</span>
