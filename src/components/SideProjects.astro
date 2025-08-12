@@ -1,0 +1,29 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content'
+
+const sideProjects: CollectionEntry<'sideProjects'>[] = await getCollection('sideProjects')
+---
+
+<div>
+    <h3>Side Projects</h3>
+    <div class="grid gap-10 mt-6">
+        {sideProjects.map(({data, id}) => (
+            <div class="flex gap-8">
+                <div class="shrink-0 min-w-28">
+                    <span class="text-gray-600 leading-8">{data.date}</span>
+                </div>
+                <div>
+                    <p class="font-medium text-base/8">
+                       {id}
+                    </p>
+                <ul class="flex gap-x-2">
+                    {data.technologies.map(item => (
+                        <li class="italic">{item}</li>
+                    ))}
+                </ul>
+                    <p class="">{data.description}</p>
+                </div>
+            </div>
+        ))}
+    </div>
+</div>

@@ -3,25 +3,29 @@
 @theme {
     --font-*: initial;
     --font-sans: 'Inter', sans-serif;
+    --font-display: 'Fraunces', serif;
 
-    --color-primary: #00809d;
+    --color-primary: #090040;
     --color-background: #fdfaf6;
     --color-inverted: #fcf8dd;
-    --color-secondary: #ffd700;
-    --color-secondaryDark: #ffd700;
+    --color-secondary: #471396;
+    --color-tertiary: #ffcc00;
+    --color-tertiary-dark: #eb3678;
 }
 
 @layer base {
     body {
         font-family: 'Inter';
     }
-    button {
-        @apply rounded-md font-medium inline-flex items-center disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 px-2.5 py-1.5 text-sm text-inverted bg-primary hover:bg-primary/75 active:bg-primary/75 disabled:bg-primary aria-disabled:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
-    }
 
-    input,
-    textarea {
-        @apply w-full rounded-md border-0 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-2.5 py-1.5 text-sm ring ring-inset ring-gray-600;
+    h1,
+    h2,
+    h3 {
+        font-family: var(--font-display);
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        color: var(--color-primary);
     }
 
     h1 {
@@ -29,6 +33,33 @@
     }
 
     h3 {
-        @apply font-semibold text-lg;
+        @apply font-medium text-base/10;
+    }
+
+    label {
+        @apply text-sm text-slate-600 mb-1;
+    }
+
+    input,
+    textarea {
+        @apply w-full mt-1 rounded-md border-0 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-2.5 py-1.5 text-sm ring ring-inset ring-gray-600;
+    }
+}
+
+@layer utilities {
+    .nav-link {
+        @apply bg-background rounded-full py-2 px-2.5 hover:bg-primary hover:text-inverted;
+    }
+
+    .nav-social-link {
+        @apply bg-background rounded-full flex items-center justify-center size-10 hover:bg-primary hover:text-inverted;
+    }
+
+    .button {
+        @apply rounded-md font-medium inline-flex items-center justify-center w-fit disabled:cursor-not-allowed aria-disabled:cursor-not-allowed disabled:opacity-75 aria-disabled:opacity-75 px-6 py-2.5 text-sm text-inverted bg-primary hover:bg-primary/75 active:bg-primary/75 disabled:bg-primary aria-disabled:bg-primary focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary;
+    }
+
+    .expanded {
+        @apply h-full opacity-100;
     }
 }

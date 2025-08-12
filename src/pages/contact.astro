@@ -1,0 +1,35 @@
+---
+import ContactForm from '../components/ContactForm.astro'
+import Layout from '../layouts/Layout.astro'
+---
+
+<Layout>
+   <div class="my-12">
+		<h1 class="font-semibold text-7xl text-center">Contact</h1>
+	</div>
+
+    <div class="max-w-lg mx-auto">
+        <div class="relative bg-background space-y-3 border-2 rounded-xl p-4 pt-12 border-primary before:content-[''] before:rounded-t-xl before:outline-2 before:outline-primary before:h-8 before:bg-secondary before:absolute before:-top-0 before:left-0 before:right-0">
+            <ContactForm />
+        </div>
+    </div>
+</Layout>
+
+<script>
+    import { actions } from 'astro:actions';
+
+    const form = document.getElementById('contact-form') as HTMLFormElement
+
+    async function handleFormSubmit(e: Event){
+        e.preventDefault()
+
+        const formData = new FormData(form)
+
+        const {data, error} = await actions.contact(formData)
+        console.log(data, error)
+
+        form.reset()
+    }
+
+    form.addEventListener('submit', handleFormSubmit)
+</script>
