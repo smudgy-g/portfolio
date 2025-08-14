@@ -33,7 +33,7 @@
     }
 
     h3 {
-        @apply font-medium text-base/10;
+        @apply font-medium text-xl/10 sm:text-lg/10;
     }
 
     label {
@@ -42,7 +42,7 @@
 
     input,
     textarea {
-        @apply w-full mt-1 rounded-md border-0 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-2.5 py-1.5 text-sm ring ring-inset ring-gray-600;
+        @apply w-full mt-1 rounded-md border-0 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-3 py-2.5 text-sm ring ring-inset ring-gray-600;
     }
 }
 

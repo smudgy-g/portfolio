@@ -1,0 +1,14 @@
+---
+interface Props {
+    color?: 'secondary' | 'tertiary' | 'tertiary-dark'
+}
+const { color = 'secondary' } = Astro.props
+---
+<div 
+    class:list={[
+        "relative bg-background space-y-3 border-2 rounded-t-xl p-4 pt-12 border-primary before:content-[''] before:rounded-t-[10px] before:outline-2 before:outline-primary before:h-8 before:absolute before:-top-0 before:inset-x-0",
+        `before:bg-${color}`
+    ]}
+>
+    <slot />
+</div>

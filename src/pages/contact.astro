@@ -1,17 +1,30 @@
 ---
-import ContactForm from '../components/ContactForm.astro'
+import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
-<Layout>
-   <div class="my-12">
-		<h1 class="font-semibold text-7xl text-center">Contact</h1>
-	</div>
-
+<Layout title="Contact">
     <div class="max-w-lg mx-auto">
-        <div class="relative bg-background space-y-3 border-2 rounded-xl p-4 pt-12 border-primary before:content-[''] before:rounded-t-xl before:outline-2 before:outline-primary before:h-8 before:bg-secondary before:absolute before:-top-0 before:left-0 before:right-0">
-            <ContactForm />
-        </div>
+        <Card>
+            <form id="contact-form" class="grid gap-y-3">
+                <label for="name">
+                    Name:
+                    <input type="text" name="name" id="name">
+                </label>
+
+                <label for="email">
+                    Email:
+                    <input type="email" name="email" id="email">
+                </label>
+
+                <label for="message">
+                    Message:
+                    <textarea name="message" id="message" rows="8"></textarea>
+                </label>
+
+                <button type="submit" class="button ml-auto">Send</button>
+            </form>
+        </Card>
     </div>
 </Layout>
 
@@ -24,6 +37,12 @@ import Layout from '../layouts/Layout.astro'
         e.preventDefault()
 
         const formData = new FormData(form)
+        const name = formData.get('name')
+        const email = formData.get('email')
+        const message = formData.get('message')
+        if (!name || !email || !message) {
+            console.error('One or more fields is missing.')
+        }
 
         const {data, error} = await actions.contact(formData)
         console.log(data, error)

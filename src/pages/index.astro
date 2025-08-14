@@ -1,53 +1,65 @@
 ---
+import Card from '../components/Card.astro';
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
 ---
 
 <Layout>
-	<div>
-		<Header />
-	</div>
-
-	<div class="my-8">
-		<div class="relative bg-background space-y-3 border-2 rounded-xl p-4 pt-12 border-primary before:content-[''] before:rounded-t-xl before:outline-2 before:outline-primary before:h-8 before:bg-tertiary-dark before:absolute before:-top-0 before:left-0 before:right-0">
-			<p class="text-lg/8">
-				I am a full stack developer at <span class="text-secondary font-display font-semibold">Colonia Technologies</span>, working on building
-				Germany's first truck sharing marketplace. Previously, I was a <span class="text-secondary font-display font-semibold">freelance web developer</span>
-				and a <span class="text-secondary font-display font-semibold">bar manager</span> in Berlin.
-			</p>
-		
-			<p class="text-lg/8">
-				I specialise in building digital products and experiences. I have experience with many
-				technologies and apply strong problem-solving skills to deliver solutions.
-			</p>
+	<div slot="head" class="py-12">
+		<div class="flex items-center justify-center">
+			<div>
+				<h1 class="font-semibold text-7xl">Adam Griffiths</h1>
+				<h2 class="text-3xl text-secondary">
+					<span class="font-bold font-sans">Enthusiastic</span> 
+					Software Developer
+				</h2>
+			</div>
 		</div>
 	</div>
 
 	<div class="my-8">
-		<div class="relative bg-background space-y-3 border-2 rounded-xl p-4 pt-12 border-primary before:content-[''] before:rounded-t-xl before:outline-2 before:outline-primary before:h-8 before:bg-tertiary before:absolute before:-top-0 before:left-0 before:right-0">
-			<h2 class="text-3xl">Technologies</h2>
-			<div>
+		<Card>
+			<div class="space-y-3">
 				<p class="text-lg/8">
-					Frontend
+					I am a full stack developer at <span class="text-secondary font-display font-semibold">Colonia Technologies</span>, working on building
+					Germany's first truck sharing marketplace. Previously, I was a <span class="text-secondary font-display font-semibold">freelance web developer</span>
+					and a <span class="text-secondary font-display font-semibold">bar manager</span> in Berlin.
 				</p>
-				<ul class="list-disc list-inside ml-4">
-					<li>Javascript & Typescript</li>
-					<li>HTML & CSS</li>
-					<li>Vue & Nuxt</li>
-					<li>React & Next</li>
-				</ul>
-			</div>
-		
-			<div>
+				
 				<p class="text-lg/8">
-					Backend
+					I specialise in building digital products and experiences. I have experience with many
+					technologies and apply strong problem-solving skills to deliver solutions.
 				</p>
-				<ul class="list-disc list-inside ml-4">
-					<li>Node</li>
-					<li>Python</li>
-					<li>PostgreSQL</li>
-				</ul>
 			</div>
-		</div>
+		</Card>
+	</div>
+
+	<div class="my-8">
+		<Card color='tertiary-dark'>
+			<div class="space-y-3">
+				<h2 class="text-3xl">Technologies</h2>
+				<div>
+					<p class="text-lg/8">
+						Frontend
+					</p>
+					<ul class="list-disc list-inside ml-4">
+						<li>Javascript & Typescript</li>
+						<li>HTML & CSS</li>
+						<li>Vue & Nuxt</li>
+						<li>React & Next</li>
+					</ul>
+				</div>
+			
+				<div>
+					<p class="text-lg/8">
+						Backend
+					</p>
+					<ul class="list-disc list-inside ml-4">
+						<li>Node</li>
+						<li>Python</li>
+						<li>PostgreSQL</li>
+					</ul>
+				</div>
+			</div>
+		</Card>
 	</div>
 </Layout>

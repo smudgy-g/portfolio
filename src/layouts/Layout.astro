@@ -1,6 +1,8 @@
 ---
 import TheNav from "../components/TheNav.astro";
 import "../styles/global.css";
+
+const { title } = Astro.props
 ---
 <!doctype html>
 <html lang="en">
@@ -16,11 +18,17 @@ import "../styles/global.css";
 		<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 		<title>adamgriff.dev</title>
 	</head>
-	<body class="bg-background relative">
-		<header class="w-full mt-4">
+	<body class="bg-background ">
+		<header class="w-full py-16 bg-[url('grid.svg')] bg-repeat relative">
+			<div class="bg-radial-[at_50%_5%] from-transparent to-background to-75% absolute inset-0"></div>
 			<TheNav />
+			<div class="my-12 z-10 relative">
+				<h1 class="font-semibold text-7xl text-center ">
+					{title}
+				</h1>
+				<slot name="head" />
+			</div>
 		</header>
-
 		<main class="max-w-3xl mx-auto mb-20 px-4">
 			<slot />
 		</main>
