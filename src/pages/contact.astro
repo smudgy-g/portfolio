@@ -1,54 +1,14 @@
 ---
 import Card from '../components/Card.astro'
 import Layout from '../layouts/Layout.astro'
+import ContactForm from '../components/ContactForm.vue'
+
 ---
 
 <Layout title="Contact">
     <div class="max-w-lg mx-auto">
         <Card>
-            <form id="contact-form" class="grid gap-y-3">
-                <label for="name">
-                    Name:
-                    <input type="text" name="name" id="name">
-                </label>
-
-                <label for="email">
-                    Email:
-                    <input type="email" name="email" id="email">
-                </label>
-
-                <label for="message">
-                    Message:
-                    <textarea name="message" id="message" rows="8"></textarea>
-                </label>
-
-                <button type="submit" class="button ml-auto">Send</button>
-            </form>
+            <ContactForm client:load />
         </Card>
     </div>
 </Layout>
-
-<script>
-    import { actions } from 'astro:actions';
-
-    const form = document.getElementById('contact-form') as HTMLFormElement
-
-    async function handleFormSubmit(e: Event){
-        e.preventDefault()
-
-        const formData = new FormData(form)
-        const name = formData.get('name')
-        const email = formData.get('email')
-        const message = formData.get('message')
-        if (!name || !email || !message) {
-            console.error('One or more fields is missing.')
-        }
-
-        const {data, error} = await actions.contact(formData)
-        console.log(data, error)
-
-        form.reset()
-    }
-
-    form.addEventListener('submit', handleFormSubmit)
-</script>

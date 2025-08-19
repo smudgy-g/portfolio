@@ -42,7 +42,7 @@
 
     input,
     textarea {
-        @apply w-full mt-1 rounded-md border-0 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-3 py-2.5 text-sm ring ring-inset ring-gray-600;
+        @apply w-full mt-1 rounded-md border-1 border-gray-600 invalid:border-red-800 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-3 py-2.5 text-sm;
     }
 }
 
