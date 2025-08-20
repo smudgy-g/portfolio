@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const projects: CollectionEntry<'projects'>[] = await getCollection('projects');
+const jobs: CollectionEntry<'jobs'>[] = await getCollection('jobs');
+const sideProjects: CollectionEntry<'sideProjects'>[] =
+    await getCollection('sideProjects');
+---
+
+<Layout title="books">
+    <div class="py-8 md:py-12">
+        <div class="px-24">
+            <div class="mt-6 space-y-3 text-xs max-w-sm md:max-w-lg"></div>
+        </div>
+    </div>
+</Layout>
