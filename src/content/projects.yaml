@@ -1,0 +1,19 @@
+Lendify:
+    position: Backend Developer
+    date: '2023'
+    url: https://github.com/kevin-kowalski/lendify
+    description: >
+        Contributed to the development of a mobile lending platform MVP, developing Node.js server and backend
+        services with initial testing. I designed and implemented RESTful APIs, integrated secure authentication
+        (JWTs), built the PostgreSQL database, and developed core features like user chat and geographical data
+        services, all within an Agile team environment.
+
+Kiosk:
+    position: Full Stack Developer
+    date: '2023'
+    url: https://github.com/smudgy-g/kiosk
+    description: >
+        Designed and developed a mobile inventory management app MVP for the hospitality industry, consolidating
+        ordering processes onto a single platform. My contributions spanned wire-framing user slow, front-end
+        development using React/TypeScript, and building a back-end API infrastructure with Koa and PostgreSQL for
+        data integration.

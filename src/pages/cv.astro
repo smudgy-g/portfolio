@@ -1,0 +1,80 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+const projects: CollectionEntry<'projects'>[] = await getCollection('projects');
+const jobs: CollectionEntry<'jobs'>[] = await getCollection('jobs');
+---
+
+<Layout title="cv">
+    <div class="py-8 md:py-12">
+        <div class="px-24">
+            <div class="w-full text-left">
+                <h2 class="">work experience</h2>
+            </div>
+            <div class="mt-6 space-y-12 text-xs max-w-sm md:max-w-lg">
+                <section>
+                    <div class="grid gap-10 mt-6">
+                        {
+                            jobs.map(({ data, id }) => (
+                                <div class="flex flex-col md:flex-row gap-2 md:gap-8">
+                                    <div class="shrink-0 min-w-28">
+                                        <span class="text-gray-400 leading-8">
+                                            {data.date}
+                                        </span>
+                                    </div>
+                                    <div class="space-y-1">
+                                        <p class="text-base/8 text-balance">
+                                            <span class="font-medium">
+                                                {data.position}{' '}
+                                            </span>
+                                            at
+                                            <span class="">{id}</span>
+                                        </p>
+                                        <p class="">{data.summary}</p>
+                                        <ul class="list-disc ml-8 mt-4">
+                                            {data.responsibilities?.map(
+                                                (item: string) => (
+                                                    <li class="">{item}</li>
+                                                )
+                                            )}
+                                        </ul>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </section>
+
+                <section>
+                    <div class="w-full text-left">
+                        <h2 class="">projects</h2>
+                    </div>
+                    <div class="grid gap-10 mt-6">
+                        {
+                            projects.map(({ data, id }) => (
+                                <div class="flex flex-col md:flex-row gap-2 md:gap-8">
+                                    <div class="shrink-0 min-w-28">
+                                        <span class="text-gray-400 leading-8">
+                                            {data.date}
+                                        </span>
+                                    </div>
+                                    <div class="space-y-2">
+                                        <p class="text-base/8 text-balance">
+                                            <span class="font-medium">
+                                                {data.position}{' '}
+                                            </span>
+                                            at
+                                            <span class="">{id}</span>
+                                        </p>
+                                        <p class="">{data.description}</p>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div></Layout
+>

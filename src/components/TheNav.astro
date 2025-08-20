@@ -1,0 +1,33 @@
+---
+import { links, socials } from '../constants';
+import Link from './Link.astro';
+import Logo from './Logo.astro';
+---
+
+<div class="fixed top-0 left-0 right-0 z-100">
+    <nav class="flex gap-0.5 px-4 py-2 md:px-6 justify-between items-start">
+        <Logo />
+        <div class="flex gap-8 md:gap-12 lg:gap-32">
+            <ul class="text-sm">
+                {
+                    links.map(({ label, to }) => (
+                        <li>
+                            <Link to={to} label={label} />
+                        </li>
+                    ))
+                }
+            </ul>
+            <ul class="md:flex gap-2 text-sm text-white space-y-3">
+                {
+                    socials.map(({ icon: Icon, to, target }) => (
+                        <li>
+                            <a href={to} target={target}>
+                                <Icon class="size-6" />
+                            </a>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </nav>
+</div>

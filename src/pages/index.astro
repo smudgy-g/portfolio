@@ -1,0 +1,110 @@
+---
+import Link from '../components/Link.astro';
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+    <div
+        slot="head"
+        class="py-12 bg-[url('dots-circle.webp')] bg-no-repeat bg-[auto_300px] bg-[right_-20%_top_30%] md:bg-[auto_350px] md:bg-[right_30%_bottom] lg:bg-[right_30%_bottom]"
+    >
+        <div class="px-24 lg:pl-40">
+            <div class="">
+                <h1 class="font-semibold">Adam Griffiths</h1>
+                <h2 class="text-3xl -mt-4 font-sans font-medium">
+                    software Developer
+                </h2>
+            </div>
+            <p class="mt-4 ml-12 text-sm max-w-sm">
+                I am a full stack developer at <Link
+                    label="Colonia Technologies"
+                    to="https://checkandrent.com"
+                />, working on building Germany's first truck sharing
+                marketplace. Previously, I was a freelance web developer and a
+                bar manager in Berlin.
+            </p>
+        </div>
+    </div>
+
+    <div class="py-8 md:py-12">
+        <div class="px-24">
+            <div class="w-full text-left">
+                <h2 class="">about</h2>
+            </div>
+            <div
+                class="mt-6 space-y-3 text-xs max-w-sm md:max-w-md md:ml-40 md:mr-auto lg:mx-auto"
+            >
+                <p>
+                    I'm Adam, a developer who thrives on the challenge of
+                    building for the web. My passion for code started long ago,
+                    tinkering with Visual Basic and Python in high school and
+                    devouring my dad's old programming books.
+                </p>
+                <p>
+                    While my path initially led me into the world of gastronomy,
+                    I eventually made the switch to pursue my true calling. It
+                    was a leap of faith that ignited a fire in me, pushing me to
+                    relentlessly learn and grow, one project at a time.
+                </p>
+
+                <p>
+                    I see the web as my playground, where code and creativity
+                    meet to build experiences. Whether I'm bringing interfaces
+                    to life with React and Next.js, styling them with Tailwind
+                    CSS, or managing backend services with Node.js, every line
+                    of code feels like sculpting art.
+                </p>
+
+                <p>
+                    For me, no bug is too stubborn and no feature too
+                    ambitious—just puzzles waiting to be solved. Each day brings
+                    a new challenge, and I dive into it with curiosity and
+                    passion, constantly learning, growing, and coding my way
+                    towards becoming the best version of myself.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="py-8 md:py-12">
+        <div class="px-24">
+            <div class="w-full text-left">
+                <h2 class="">skills</h2>
+            </div>
+            <div
+                class="mt-6 space-y-3 text-xs max-w-sm flex justify-start gap-8 md:max-w-md md:ml-40 md:mr-auto lg:mx-auto"
+            >
+                <div>
+                    <p class="text-base/8 font-medium">languages</p>
+                    <ul class="text-sm">
+                        <li>Javascript</li>
+                        <li>Typescript</li>
+                        <li>Python</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <p class="text-base/8 font-medium">frameworks</p>
+                    <ul class="text-sm">
+                        <li>Node</li>
+                        <li>Vue & Nuxt</li>
+                        <li>Flask</li>
+                        <li>React</li>
+                    </ul>
+                </div>
+                <div>
+                    <p class="text-base/8 font-medium">tools</p>
+                    <ul class="text-sm">
+                        <li>Supabase</li>
+                        <li>Git & Github</li>
+                        <li>Postman</li>
+                        <li>Figma</li>
+                        <li>Browser DevTools</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

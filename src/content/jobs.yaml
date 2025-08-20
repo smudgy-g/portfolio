@@ -1,0 +1,32 @@
+Colonia Technologies Gmbh:
+    date: '2024 - present'
+    position: Full-stack Developer
+    summary: >
+        I am part of a team building Germany's first online platform to transform all trucks and semi-trailers into a sharing fleet.
+    responsibilities:
+        - Built client side interfaces and components using Vue.js, and used Storybook for isolated development and documentation with an emphasis on clean code and modularity.
+        - Developed backend solutions using PostgreSQL and Supabase, and extended functionality with Node.js edge functions.
+        - Developed supplier/vendor features to simplify vehicle listing uploads and management that increased public vehicle listings.
+        - Developed an internal server error handling module to speed up debugging time by providing developers with increased context and provide error codes for the client-side for better user error messages.
+        - Implemented location and POSTGiS services for distance management and querying.
+        - Proactively resolved errors by monitoring Sentry.io log reports, and decreased technical debt by adhering to the “boy scout” principle.
+
+Freelance:
+    date: '2022 - 2024'
+    position: Developer
+    summary: Developed and delivered web solutions for various clients.
+    responsibilities:
+        - Developed and delivered custom web solutions for diverse clients, encompassing full project lifecycle management from initial consultation to deployment and ongoing support.
+        - Translated client designs using React.js and Next.js, ensuring responsive performance across all devices.
+        - Collaborated with a senior developer for a larger project refreshing the Oxmose record label.
+        - Streamlined content workflows and content creation by integrating and configuring Sanity.io CMS.
+        - Developed responsive interfaces across devices.
+
+Soho House & Co and Montraw:
+    date: '2017 - 2023'
+    position: Bar Manager
+    summary: >
+        Managed the complete operation of bars, encompassing staff leadership & training, stock control, and
+        financial tracking through custom solutions. Built strong client and vendor relationships, contributing to
+        efficient operations.
+    responsibilities:

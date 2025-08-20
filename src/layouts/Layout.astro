@@ -1,0 +1,37 @@
+---
+import TheFooter from '../components/TheFooter.astro';
+import TheNav from '../components/TheNav.astro';
+import '../styles/global.css';
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <!-- TODO: Change favicon -->
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="generator" content={Astro.generator} />
+
+        <title>adamgriff.dev</title>
+    </head>
+    <body>
+        <header class="w-full">
+            <TheNav />
+        </header>
+        <div>
+            <div slot="head" class="pt-24">
+                <div class="px-24 lg:pl-40">
+                    <h1 class="font-semibold">{title}</h1>
+                </div>
+            </div>
+            <slot name="head" />
+        </div>
+    </body>
+    <main class="mb-20">
+        <slot />
+    </main>
+</html>
+<TheFooter />
