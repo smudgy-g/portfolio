@@ -6,9 +6,9 @@ import Layout from '../layouts/Layout.astro';
 <Layout>
     <div
         slot="head"
-        class="py-12 bg-[url('dots-circle.webp')] bg-no-repeat bg-[auto_300px] bg-[right_-20%_top_30%] md:bg-[auto_350px] md:bg-[right_30%_bottom] lg:bg-[right_30%_bottom]"
+        class="py-12 bg-[image-set(url('dots-circle.webp'), url('dots-circle.png'))] bg-no-repeat bg-[auto_300px] bg-[right_-20%_top_30%] md:bg-[auto_350px] md:bg-[right_30%_bottom] lg:bg-[right_30%_bottom]"
     >
-        <div class="px-24 lg:pl-40">
+        <div class="mx-auto max-w-4xl px-3 md:px-0">
             <div class="">
                 <h1 class="font-semibold">Adam Griffiths</h1>
                 <h2 class="text-3xl -mt-4 font-sans font-medium">
@@ -27,13 +27,13 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div class="py-8 md:py-12">
-        <div class="px-24">
-            <div class="w-full text-left">
+        <div
+            class="px-4 sm:px-24 md:px-0 max-w-4xl mx-auto md:max-w-3xl md:pr-24"
+        >
+            <div>
                 <h2 class="">about</h2>
             </div>
-            <div
-                class="mt-6 space-y-3 text-xs max-w-sm md:max-w-md md:ml-40 md:mr-auto lg:mx-auto"
-            >
+            <div class="mt-6 space-y-3 md:pl-40 lg:mx-auto text-sm">
                 <p>
                     I'm Adam, a developer who thrives on the challenge of
                     building for the web. My passion for code started long ago,
@@ -67,15 +67,19 @@ import Layout from '../layouts/Layout.astro';
     </div>
 
     <div class="py-8 md:py-12">
-        <div class="px-24">
-            <div class="w-full text-left">
+        <div
+            class="px-4 sm:px-24 md:px-0 max-w-4xl mx-auto md:max-w-3xl md:pr-24"
+        >
+            <div>
                 <h2 class="">skills</h2>
             </div>
             <div
-                class="mt-6 space-y-3 text-xs max-w-sm flex justify-start gap-8 md:max-w-md md:ml-40 md:mr-auto lg:mx-auto"
+                class="mt-6 space-y-3 flex gap-3 justify-between md:pl-40 lg:mx-auto"
             >
                 <div>
-                    <p class="text-base/8 font-medium">languages</p>
+                    <p class="text-base/8 font-medium text-stone-400">
+                        languages
+                    </p>
                     <ul class="text-sm">
                         <li>Javascript</li>
                         <li>Typescript</li>
@@ -86,7 +90,9 @@ import Layout from '../layouts/Layout.astro';
                 </div>
 
                 <div>
-                    <p class="text-base/8 font-medium">frameworks</p>
+                    <p class="text-base/8 font-medium text-stone-400">
+                        frameworks
+                    </p>
                     <ul class="text-sm">
                         <li>Node</li>
                         <li>Vue & Nuxt</li>
@@ -95,7 +101,7 @@ import Layout from '../layouts/Layout.astro';
                     </ul>
                 </div>
                 <div>
-                    <p class="text-base/8 font-medium">tools</p>
+                    <p class="text-base/8 font-medium text-stone-400">tools</p>
                     <ul class="text-sm">
                         <li>Supabase</li>
                         <li>Git & Github</li>

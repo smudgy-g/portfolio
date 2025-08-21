@@ -18,19 +18,18 @@ const { title } = Astro.props;
         <title>adamgriff.dev</title>
     </head>
     <body>
-        <header class="w-full">
-            <TheNav />
-        </header>
+        <TheNav />
+
         <div>
             <div slot="head" class="pt-24">
-                <div class="px-24 lg:pl-40">
+                <div class="mx-auto max-w-4xl px-3 md:px-0">
                     <h1 class="font-semibold">{title}</h1>
                 </div>
             </div>
             <slot name="head" />
         </div>
     </body>
-    <main class="mb-20">
+    <main class="mb-20 max-w-6xl mx-auto">
         <slot />
     </main>
 </html>

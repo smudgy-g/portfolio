@@ -4,9 +4,13 @@ import Link from './Link.astro';
 import Logo from './Logo.astro';
 ---
 
-<div class="fixed top-0 left-0 right-0 z-100">
-    <nav class="flex gap-0.5 px-4 py-2 md:px-6 justify-between items-start">
-        <Logo />
+<header class="w-full fixed top-0 left-0 right-0 z-100 bg-c-black/90">
+    <nav
+        class="flex gap-0.5 px-4 py-2 justify-between items-start max-w-6xl mx-auto md:px-6"
+    >
+        <div>
+            <Logo />
+        </div>
         <div class="flex gap-8 md:gap-12 lg:gap-32">
             <ul class="text-sm">
                 {
@@ -20,7 +24,7 @@ import Logo from './Logo.astro';
             <ul class="md:flex gap-2 text-sm text-white space-y-3">
                 {
                     socials.map(({ icon: Icon, to, target }) => (
-                        <li>
+                        <li class="hover:text-highlight transition-colors duration-400">
                             <a href={to} target={target}>
                                 <Icon class="size-6" />
                             </a>
@@ -30,4 +34,4 @@ import Logo from './Logo.astro';
             </ul>
         </div>
     </nav>
-</div>
+</header>

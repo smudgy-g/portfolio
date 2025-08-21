@@ -7,11 +7,13 @@
     --font-display: 'Abhaya Libre', serif;
 
     --color-c-white: #faf0e6;
+    --color-c-black: #0f0f0f;
+    --color-highlight: #169976;
 }
 
 @layer base {
     html {
-        @apply bg-black text-c-white;
+        @apply bg-c-black text-gray-300;
     }
     body {
         font-family: 'Inter';
@@ -37,7 +39,7 @@
 
     input,
     textarea {
-        @apply w-full mt-1 rounded-md border-1 border-gray-600 invalid:border-red-800 placeholder:text-gray-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-3 py-2.5 text-sm;
+        @apply w-full mt-1 rounded-md border-1 border-stone-600 invalid:border-red-800 placeholder:text-stone-500 focus:outline-none disabled:cursor-not-allowed disabled:opacity-75 px-3 py-2.5 text-sm;
     }
 }
 

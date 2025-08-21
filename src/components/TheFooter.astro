@@ -4,14 +4,14 @@ import Logo from './Logo.astro';
 ---
 
 <footer class="w-full px-8 py-6 border-t border-c-white/30">
-    <div class="flex flex-col items-center gap-y-4">
+    <div class="flex flex-col items-center gap-y-4 max-w-4xl mx-auto">
         <ul class="flex justify-evenly text-sm w-full">
             {
                 links.map(({ label, to }) => (
                     <li>
                         <a href={to} class="group relative inline-block">
                             <span>{label}</span>
-                            <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-c-white transition-all duration-300 group-hover:w-full" />
+                            <span class="absolute bottom-0 left-0 h-0.5 w-0 bg-highlight transition-all duration-300 group-hover:w-full" />
                         </a>
                     </li>
                 ))
@@ -20,7 +20,7 @@ import Logo from './Logo.astro';
         <ul class="flex gap-2 text-sm text-white space-x-3">
             {
                 socials.map(({ icon: Icon, to, target }) => (
-                    <li>
+                    <li class="hover:text-highlight transition-colors duration-400">
                         <a href={to} target={target}>
                             <Icon class="size-4" />
                         </a>
