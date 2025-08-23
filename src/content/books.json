@@ -1,0 +1,359 @@
+[
+    {
+        "id": "9781455802593",
+        "title": "Hyperion",
+        "author": "Dan Simmons",
+        "published_date": 1989,
+        "isbn": "9781455802593"
+    },
+    {
+        "id": "9780553288209",
+        "title": "The Fall of Hyperion",
+        "author": "Dan Simmons",
+        "published_date": 1990,
+        "isbn": "9780553288209"
+    },
+    {
+        "id": "9780553572940",
+        "title": "Endymion",
+        "author": "Dan Simmons",
+        "published_date": 1996,
+        "isbn": "9780553572940"
+    },
+    {
+        "id": "9780747258933",
+        "title": "The Rise of Endymion",
+        "author": "Dan Simmons",
+        "published_date": 1997,
+        "isbn": "9780747258933"
+    },
+    {
+        "id": "978-0-937986-50-9",
+        "title": "The Dark Tower: The Gunslinger",
+        "author": "Stephen King",
+        "published_date": 1982,
+        "isbn": "978-0-937986-50-9"
+    },
+    {
+        "id": "9780937986905",
+        "title": "The Dark Tower II: The Drawing of the Three",
+        "author": "Stephen King",
+        "published_date": 1987,
+        "isbn": "9780937986905"
+    },
+    {
+        "id": "9781444723465",
+        "title": "The Dark Tower III: The Waste Lands",
+        "author": "Stephen King",
+        "published_date": 1991,
+        "isbn": "9781444723465"
+    },
+    {
+        "id": "978-1-880418-38-3",
+        "title": "The Dark Tower IV: Wizard and Glass",
+        "author": "Stephen King",
+        "published_date": 1997,
+        "isbn": "978-1-880418-38-3"
+    },
+    {
+        "id": "9780743251624",
+        "title": "The Dark Tower V: Wolves of the Calla",
+        "author": "Stephen King",
+        "published_date": 2003,
+        "isbn": "9780743251624"
+    },
+    {
+        "id": "9781444723496",
+        "title": "The Dark Tower VI: Song of Susannah",
+        "author": "Stephen King",
+        "published_date": 2004,
+        "isbn": "9781444723496"
+    },
+    {
+        "id": "9781444723502",
+        "title": "The Dark Tower VII: The Dark Tower",
+        "author": "Stephen King",
+        "published_date": 2004,
+        "isbn": "9781444723502"
+    },
+    {
+        "id": "9781501166228",
+        "title": "The Dark Tower: The Wind Through the Keyhole",
+        "author": "Stephen King",
+        "published_date": 2012,
+        "isbn": "9781501166228"
+    },
+    {
+        "id": "9780571334650",
+        "title": "Normal People",
+        "author": "Sally Rooney",
+        "published_date": 2018,
+        "isbn": "9780571334650"
+    },
+    {
+        "id": "9780063204157",
+        "title": "Remarkably Bright Creatures",
+        "author": "Shelby Van Pelt",
+        "published_date": 2022,
+        "isbn": "9780063204157"
+    },
+    {
+        "id": "9780099540922",
+        "title": "The Jungle Book",
+        "author": "Rudyard Kipling",
+        "published_date": 1894,
+        "isbn": "9780099540922"
+    },
+    {
+        "id": "9789174869705",
+        "title": "Betty Blue",
+        "author": "Philippe Djian",
+        "published_date": 1985,
+        "isbn": "9789174869705"
+    },
+    {
+        "id": "9781551111261",
+        "title": "The Picture of Dorian Gray",
+        "author": "Oscar Wilde",
+        "published_date": 1890,
+        "isbn": "9781551111261"
+    },
+    {
+        "id": "9780861403783",
+        "title": "The Importance of Being Earnest",
+        "author": "Oscar Wilde",
+        "published_date": 1895,
+        "isbn": "9780861403783"
+    },
+    {
+        "id": "9780684801469",
+        "title": "A Farewell to Arms",
+        "author": "Ernest Hemingway",
+        "published_date": 1929,
+        "isbn": "9780684801469"
+    },
+    {
+        "id": "9780857059208",
+        "title": "The Disappearance of Stephanie Mailer",
+        "author": "Joël Dicker",
+        "published_date": 2018,
+        "isbn": "9780857059208"
+    },
+    {
+        "id": "9780857056870",
+        "title": "The Baltimore Boys",
+        "author": "Joël Dicker",
+        "published_date": 2015,
+        "isbn": "9780857056870"
+    },
+    {
+        "id": "0312026307",
+        "title": "The Player of Games",
+        "author": "Iain M. Banks",
+        "published_date": 1988,
+        "isbn": "0312026307"
+    },
+    {
+        "id": "9781596069626",
+        "title": "Use of Weapons",
+        "author": "Iain M. Banks",
+        "published_date": 1990,
+        "isbn": "9781596069626"
+    },
+    {
+        "id": "9781585670215",
+        "title": "Masters of Atlantis",
+        "author": "Charles Portis",
+        "published_date": 1985,
+        "isbn": "9781585670215"
+    },
+    {
+        "id": "9780143795179",
+        "title": "Khaki Town",
+        "author": "Judy Nunn",
+        "published_date": 2019,
+        "isbn": "9780143795179"
+    },
+    {
+        "id": "9781761340130",
+        "title": "Black Sheep",
+        "author": "Judy Nunn",
+        "published_date": 2023,
+        "isbn": "9781761340130"
+    },
+    {
+        "id": "978-0-297-85439-5",
+        "title": "Life",
+        "author": "Keith Richards",
+        "published_date": 2010,
+        "isbn": "978-0-297-85439-5"
+    },
+    {
+        "id": "9780008172435",
+        "title": "What Does This Button Do?",
+        "author": "Bruce Dickinson",
+        "published_date": 2017,
+        "isbn": "9780008172435"
+    },
+    {
+        "id": "9780241425442",
+        "title": "The Thursday Murder Club",
+        "author": "Richard Osman",
+        "published_date": 2020,
+        "isbn": "9780241425442"
+    },
+    {
+        "id": "9780241425428",
+        "title": "The Man Who Died Twice",
+        "author": "Richard Osman",
+        "published_date": 2021,
+        "isbn": "9780241425428"
+    },
+    {
+        "id": "9780593299395",
+        "title": "The Bullet That Missed",
+        "author": "Richard Osman",
+        "published_date": 2022,
+        "isbn": "9780593299395"
+    },
+    {
+        "id": "     9780241512456 ",
+        "title": "The Last Devil to Die",
+        "author": "Richard Osman",
+        "published_date": 2023,
+        "isbn": "     9780241512456 "
+    },
+    {
+        "id": "9781784161873",
+        "title": "At Home",
+        "author": "Bill Bryson",
+        "published_date": 2010,
+        "isbn": "9781784161873"
+    },
+    {
+        "id": "9780857522405",
+        "title": "The Body: A Guide for Occupants",
+        "author": "Bill Bryson",
+        "published_date": 2019,
+        "isbn": "9780857522405"
+    },
+    {
+        "id": "055299703X",
+        "title": "Down Under",
+        "author": "Bill Bryson",
+        "published_date": 2000,
+        "isbn": "055299703X"
+    },
+    {
+        "id": "9780380727506",
+        "title": "Notes from a Small Island",
+        "author": "Bill Bryson",
+        "published_date": 1995,
+        "isbn": "9780380727506"
+    },
+    {
+        "id": "9780767919371",
+        "title": "The Life and Times of the Thunderbolt Kid",
+        "author": "Bill Bryson",
+        "published_date": 2006,
+        "isbn": "9780767919371"
+    },
+    {
+        "id": "9780143778547",
+        "title": "Chippy Chasers",
+        "author": "Sam Cotton",
+        "published_date": 2022,
+        "isbn": "9780143778547"
+    },
+    {
+        "id": "0140030751",
+        "title": "Froth on the Daydream",
+        "author": "Boris Vian",
+        "published_date": 1947,
+        "isbn": "0140030751"
+    },
+    {
+        "id": "9780199538466",
+        "title": "The Three Musketeers",
+        "author": "Alexandre Dumas",
+        "published_date": 1844,
+        "isbn": "9780199538466"
+    },
+    {
+        "id": "9782804607463",
+        "title": "Flowers of Evil",
+        "author": "Charles Baudelaire",
+        "published_date": 1857,
+        "isbn": "9782804607463"
+    },
+    {
+        "id": "9780544439566",
+        "title": "Mary Poppins",
+        "author": "P.L. Travers",
+        "published_date": 1934,
+        "isbn": "9780544439566"
+    },
+    {
+        "id": "9780060987107",
+        "title": "Wicked: The Life and Times of the Wicked Witch of the West",
+        "author": "Gregory Maguire",
+        "published_date": 1995,
+        "isbn": "9780060987107"
+    },
+    {
+        "id": "9780060883287",
+        "title": "One Hundred Years of Solitude",
+        "author": "Gabriel García Márquez",
+        "published_date": 1967,
+        "isbn": "9780060883287"
+    },
+    {
+        "id": "9781557997415",
+        "title": "Three Lives",
+        "author": "Gertrude Stein",
+        "published_date": 1909,
+        "isbn": "9781557997415"
+    },
+    {
+        "id": "068482499X",
+        "title": "A Moveable Feast",
+        "author": "Ernest Hemingway",
+        "published_date": 1964,
+        "isbn": "068482499X"
+    },
+    {
+        "id": "9780684801582",
+        "title": "Green Hills of Africa",
+        "author": "Ernest Hemingway",
+        "published_date": 1935,
+        "isbn": "9780684801582"
+    },
+    {
+        "id": "9781524736309",
+        "title": "The Underground Railroad",
+        "author": "Colson Whitehead",
+        "published_date": 2016,
+        "isbn": "9781524736309"
+    },
+    {
+        "id": "9780385545136",
+        "title": "Harlem Shuffle",
+        "author": "Colson Whitehead",
+        "published_date": 2021,
+        "isbn": "9780385545136"
+    },
+    {
+        "id": "9780684865135",
+        "title": "Catch-22",
+        "author": "Joseph Heller",
+        "published_date": 1961,
+        "isbn": "9780684865135"
+    },
+    {
+        "id": "9781594743344",
+        "title": "Pride and Prejudice and Zombies",
+        "author": "Seth Grahame-Smith",
+        "published_date": 2009,
+        "isbn": "9781594743344"
+    }
+]
