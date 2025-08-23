@@ -1,5 +1,5 @@
 import { defineCollection, z } from 'astro:content';
-import { glob, file } from 'astro/loaders';
+import { file } from 'astro/loaders';
 
 const jobs = defineCollection({
     loader: file('src/content/jobs.yaml'),
@@ -31,4 +31,14 @@ const sideProjects = defineCollection({
     }),
 });
 
-export const collections = { jobs, projects, sideProjects };
+const books = defineCollection({
+    loader: file('src/content/books.json'),
+    schema: z.object({
+        id: z.string(),
+        title: z.string(),
+        author: z.string(),
+        published_date: z.number(),
+        isbn: z.string(),
+    }),
+});
+export const collections = { jobs, projects, sideProjects, books };
