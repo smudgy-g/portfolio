@@ -1,5 +1,26 @@
 [
     {
+        "id": "9780553392425",
+        "title": "Fool's Assassin",
+        "author": "Robin Hobb",
+        "published_date": 2001,
+        "isbn": "9780553392425"
+    },
+    {
+        "id": "9780553573398",
+        "title": "Assassin's Apprentice",
+        "author": "Robin Hobb",
+        "published_date": 1996,
+        "isbn": "9780553573398"
+    },
+    {
+        "id": "9780008511715",
+        "title": "Butter",
+        "author": "Asako Yuzuki",
+        "published_date": 2021,
+        "isbn": "9780008511715"
+    },
+    {
         "id": "9781455802593",
         "title": "Hyperion",
         "author": "Dan Simmons",
