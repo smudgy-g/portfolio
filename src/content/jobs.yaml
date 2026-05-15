@@ -2,7 +2,7 @@ Colonia Technologies Gmbh:
     date: '2024 - present'
     position: Full-stack Developer
     summary: >
-        I am part of a team building Germany's first online platform to transform all trucks and semi-trailers into a sharing fleet.
+        I am part of a team building Germany's largest online platform to transform all trucks and semi-trailers into a sharing fleet.
     responsibilities:
         - Built client-side interfaces and components using Vue.js, and used Storybook for isolated development and documentation with an emphasis on clean code and modularity. 
         - Developed backend solutions using PostgreSQL and Supabase, and extended functionality with Node.js edge functions. 
