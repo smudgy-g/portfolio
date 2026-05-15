@@ -14,6 +14,4 @@ Graffiti:
     date: '2025'
     url: no url yet
     description: >
-        A multi-user platform where multiple users can connect to a shared canvas and draw simultaneously. This
-        project involved developing a React frontend that connects to a server built with Python/Flask and leverages
-        web sockets for real-time event handling, Postgresql for drawing storage and user management
+        A real-time collaborative canvas where multiple users can draw simultaneously via WebSockets. Built a React frontend backed by a Python/Flask server, with PostgreSQL handling persistent drawing storage and user management.
