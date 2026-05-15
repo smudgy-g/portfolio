@@ -4,9 +4,7 @@ AFL Match Prediction System:
     date: '2025'
     url: no url yet
     description: >
-        Engineered a Python-based solution for Australian Football League (AFL) game predictions. This involved web
-        scraping diverse AFL data sources and applying the Elo ranking system to generate probabilistic forecasts for
-        future matches.
+        A Python-based AFL match prediction tool built for fun and learning. Scraped match data from multiple sources and applied the Elo ranking system to generate probabilistic forecasts for upcoming games.
 
 Graffiti:
     technologies:
