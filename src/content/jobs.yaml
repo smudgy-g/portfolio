@@ -4,12 +4,14 @@ Colonia Technologies Gmbh:
     summary: >
         I am part of a team building Germany's first online platform to transform all trucks and semi-trailers into a sharing fleet.
     responsibilities:
-        - Built client side interfaces and components using Vue.js, and used Storybook for isolated development and documentation with an emphasis on clean code and modularity.
-        - Developed backend solutions using PostgreSQL and Supabase, and extended functionality with Node.js edge functions.
-        - Developed supplier/vendor features to simplify vehicle listing uploads and management that increased public vehicle listings.
-        - Developed an internal server error handling module to speed up debugging time by providing developers with increased context and provide error codes for the client-side for better user error messages.
-        - Implemented location and POSTGiS services for distance management and querying.
-        - Proactively resolved errors by monitoring Sentry.io log reports, and decreased technical debt by adhering to the “boy scout” principle.
+        - Built client-side interfaces and components using Vue.js, and used Storybook for isolated development and documentation with an emphasis on clean code and modularity. 
+        - Developed backend solutions using PostgreSQL and Supabase, and extended functionality with Node.js edge functions. 
+        - Led the end-to-end design and implementation of an internal invoice and billing system, covering monthly billing runs, internal tooling, and user management — enabling scalable, automated financial operations across the platform. 
+        - Developed supplier/vendor features to simplify vehicle listing uploads and management, resulting in increased public vehicle listings. 
+        - 'Architected and enhanced the platform's search and filtering system, improving the accuracy, performance, and usability of vehicle discovery for end users.'
+        - Developed an internal server error handling module to speed up debugging by providing developers with increased context and exposing error codes to the client for better user-facing error messages. 
+        - Implemented location and PostGIS services for distance management and spatial querying.
+        - 'Proactively resolved errors by monitoring Sentry.io log reports, and reduced technical debt by adhering to the "boy scout" principle.'
 
 Freelance:
     date: '2022 - 2024'
