@@ -2,27 +2,24 @@ Colonia Technologies Gmbh:
     date: '2024 - present'
     position: Full-stack Developer
     summary: >
-        I am part of a team building Germany's largest online platform to transform all trucks and semi-trailers into a sharing fleet.
+        Primary developer on Germany's largest online platform for transforming trucks and semi-trailers into a sharing fleet — taking pitches and requirements from stakeholders through to scoping, architecture, and full-stack delivery, end to end.
     responsibilities:
-        - Built client-side interfaces and components using Vue.js, and used Storybook for isolated development and documentation with an emphasis on clean code and modularity. 
-        - Developed backend solutions using PostgreSQL and Supabase, and extended functionality with Node.js edge functions. 
-        - Led the end-to-end design and implementation of an internal invoice and billing system, covering monthly billing runs, internal tooling, and user management — enabling scalable, automated financial operations across the platform. 
-        - Developed supplier/vendor features to simplify vehicle listing uploads and management, resulting in increased public vehicle listings. 
-        - 'Architected and enhanced the platform's search and filtering system, improving the accuracy, performance, and usability of vehicle discovery for end users.'
-        - Developed an internal server error handling module to speed up debugging by providing developers with increased context and exposing error codes to the client for better user-facing error messages. 
-        - Implemented location and PostGIS services for distance management and spatial querying.
-        - 'Proactively resolved errors by monitoring Sentry.io log reports, and reduced technical debt by adhering to the "boy scout" principle.'
+        - Act as the platform's sole engineer, translating stakeholder pitches into scoped, shipped solutions — owning every technical decision from architecture to implementation, with no team to defer to.
+        - Designed and delivered the platform's billing system from scratch: automated monthly billing runs, invoice generation, and lead-deduplication logic to ensure fair distribution across suppliers — replacing manual finance operations entirely.
+        - Currently scoping and building an improved lead-qualification system to raise match quality for companies on the platform, from initial requirements through implementation.
+        - Owned the platform's search and filtering architecture end-to-end, including PostGIS-based spatial querying, materially improving vehicle discovery accuracy and performance.
+        - Built the supplier/vendor listing workflow that removed friction from vehicle uploads, directly driving growth in public listings.
+        - Improved organic acquisition by introducing structured data (JSON-LD) across key pages.
+        - Maintain the platform's frontend architecture in Vue.js with Storybook, keeping the codebase modular and maintainable as sole owner of the code quality bar.
 
-Freelance:
+Independent Projects:
     date: '2022 - 2024'
     position: Developer
-    summary: Developed and delivered web solutions for various clients.
+    summary: Built full-stack web projects independently to deepen my skills beyond the bootcamp curriculum.
     responsibilities:
-        - Developed and delivered custom web solutions for diverse clients, encompassing full project lifecycle management from initial consultation to deployment and ongoing support.
-        - Translated client designs using React.js and Next.js, ensuring responsive performance across all devices.
-        - Collaborated with a senior developer for a larger project refreshing the Oxmose record label.
-        - Streamlined content workflows and content creation by integrating and configuring Sanity.io CMS.
-        - Developed responsive interfaces across devices.
+        - Scaffolded a Next.js rebuild for the Oxmose record label from provided designs and set up its Sanity.io CMS, then worked alongside a senior developer who completed and polished the build.
+        - Designed and built a Next.js website with a Sanity.io CMS for a Berlin-based non-profit, as a self-directed MVP.
+        - Translated designs into responsive, accessible interfaces using React.js and Next.js.
 
 Soho House & Co and Montraw:
     date: '2017 - 2023'
