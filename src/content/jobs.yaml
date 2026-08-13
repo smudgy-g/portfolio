@@ -4,13 +4,13 @@ Colonia Technologies Gmbh:
     summary: >
         Primary developer on Germany's largest online platform for transforming trucks and semi-trailers into a sharing fleet — taking pitches and requirements from stakeholders through to scoping, architecture, and full-stack delivery, end to end.
     responsibilities:
-        - Act as the platform's sole engineer, translating stakeholder pitches into scoped, shipped solutions — owning every technical decision from architecture to implementation, with no team to defer to.
-        - Designed and delivered the platform's billing system from scratch: automated monthly billing runs, invoice generation, and lead-deduplication logic to ensure fair distribution across suppliers — replacing manual finance operations entirely.
-        - Currently scoping and building an improved lead-qualification system to raise match quality for companies on the platform, from initial requirements through implementation.
-        - Owned the platform's search and filtering architecture end-to-end, including PostGIS-based spatial querying, materially improving vehicle discovery accuracy and performance.
-        - Built the supplier/vendor listing workflow that removed friction from vehicle uploads, directly driving growth in public listings.
-        - Improved organic acquisition by introducing structured data (JSON-LD) across key pages.
-        - Maintain the platform's frontend architecture in Vue.js with Storybook, keeping the codebase modular and maintainable as sole owner of the code quality bar.
+    - Act as the platform's sole engineer, translating stakeholder pitches into scoped, shipped solutions — owning every technical decision from architecture to implementation, with no team to defer to.
+    - Designed and delivered the platform's billing system from scratch — automated monthly billing runs, invoice generation, and lead-deduplication logic to keep distribution fair across suppliers — replacing manual finance operations entirely.
+    - Currently scoping and building an improved lead-qualification system to raise match quality for companies on the platform, from requirements through implementation.
+    - Owned the platform's search and filtering architecture end-to-end, including PostGIS-based spatial querying, materially improving vehicle discovery accuracy and performance.
+    - Built the supplier/vendor listing workflow that removed friction from vehicle uploads, directly driving growth in public listings.
+    - Improved organic acquisition by introducing structured data (JSON-LD) across key pages.
+    - Maintain the platform's frontend in Vue.js with Storybook, keeping the codebase modular as sole owner of the code quality bar.
 
 Independent Projects:
     date: '2022 - 2024'
